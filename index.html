@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/c313c8dbc7.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>The Fun Zone</title>
+</head>
+<body>
+    <div id="gap" class="gap"></div>
+
+    <div id="nav" class="nav">
+        <a class="logo" href="index.html">
+            <img src="img/logo.png" alt="logo">
+            <span>the fun zone</span>
+        </a>
+        <div id="navlist" class="navlist">
+            <a href="#home">HOME</a>
+            <a href="#exp">EXPERIENCE</a>
+            <a href="#din">LEISURE & DINNING</a>
+            <a href="#char">PARKS CHARACTERS</a>
+            <a href="#whatsup">WHATS UP</a>
+            <a href="#info">PARK INFORMATION</a>
+            <a href="#info">BUSINESS OPPORTUNITIES</a>
+            <i id="closeIcon" class="fa-solid fa-circle-xmark fa-3x"></i>
+        </div>
+        <i id="menuIcon" class="fa-solid fa-bars fa-2x" onclick="showMenu()"></i>
+    </div>
+
+    <!-- Wrapper All Sections -->
+    <div  class="wrapper">
+        <!-- Home Section -->
+        <section id="home" class="home">
+            <div class="home-layer"></div>
+            <div class="home-text">
+                <h1 class="text-shadow">WELCOME TO THE FUN ZONE</h1>
+                <p class="text-shadow">The Most Entertaining Theme Park</p>
+                <button id="ticketBtn" class="btn">Reserve</button>
+            </div>
+
+            <!-- Tickets Popup -->
+            <div id="ticketPopup" class="ticketPopup">
+                
+            </div>
+        </section>
+    
+        <!-- Experience Section -->
+        <section id="exp" class="exp">
+            <div class="brief odd">
+                <img src="img/map.gif" alt="map">
+
+                <div class="brief-text">
+                    <h2>Experience</h2>
+                    <p>
+                        I can provide clean code and pixel perfect design. 
+                        I also make the website more and more interactive
+                        with web animations. I also make the website more and more interactive with web
+                        animations. A responsive design makes your website accessible to
+                        all users, regardless of their device.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="ready">
+                <h3>Ready for all attractions?</h3>
+            </div>
+
+            <div class="list">
+                <a href="attractions/attraction.html" class="item">
+                    <img src="img/archipel.gif" alt="attractions">
+                    <div class="layer">
+                        <h4 class="text-shadow">Archipel</h4>
+                    </div>
+                </a>
+                <a href="attractions/attraction.html" class="item">
+                    <img src="img/sirocco.gif" alt="attractions">
+                    <div class="layer">
+                        <h4 class="text-shadow">Sirocco</h4>
+                    </div>
+                </a>
+                <a href="attractions/attraction.html" class="item">
+                    <img src="img/nest.gif" alt="attractions">
+                    <div class="layer">
+                        <h4 class="text-shadow">Nest</h4>
+                    </div>
+                </a>
+                <a href="attractions/attraction.html" class="item">
+                    <img src="img/max-and-moritz.gif" alt="attractions">
+                    <div class="layer">
+                        <h4 class="text-shadow">Max & Moritz</h4>
+                    </div>
+                </a>
+                <a href="attractions/attraction.html" class="item">
+                    <img src="img/fabula.gif" alt="attractions">
+                    <div class="layer">
+                        <h4 class="text-shadow">Fabula</h4>
+                    </div>
+                </a>
+                <a href="attractions/attraction.html" class="item">
+                    <img src="img/symbolica.gif" alt="attractions">
+                    <div class="layer">
+                        <h4 class="text-shadow">Symbolica</h4>
+                    </div>
+                </a>
+
+                <!-- Start see more or see less from here -->
+                <a href="attractions/attraction.html" class="item moreExp showOrHide">
+                    <img src="img/archipel.gif" alt="attractions">
+                    <div class="layer">
+                        <h4 class="text-shadow">Joris en de Draak</h4>
+                    </div>
+                </a>
+                <a href="attractions/attraction.html" class="item moreExp showOrHide">
+                    <img src="img/archipel.gif" alt="attractions">
+                    <div class="layer">
+                        <h4 class="text-shadow">Baron 1898</h4>
+                    </div>
+                </a>
+                <a href="attractions/attraction.html" class="item moreExp showOrHide">
+                    <img src="img/archipel.gif" alt="attractions">
+                    <div class="layer">
+                        <h4 class="text-shadow">Droomvlucht</h4>
+                    </div>
+                </a>
+                <a href="attractions/attraction.html" class="item moreExp showOrHide">
+                    <img src="img/archipel.gif" alt="attractions">
+                    <div class="layer">
+                        <h4 class="text-shadow">Fairytale Forest</h4>
+                    </div>
+                </a>
+                <a href="attractions/attraction.html" class="item moreExp showOrHide">
+                    <img src="img/archipel.gif" alt="attractions">
+                    <div class="layer">
+                        <h4 class="text-shadow">De Vliegende Hollander</h4>
+                    </div>
+                </a>
+                <a href="attractions/attraction.html" class="item moreExp showOrHide">
+                    <img src="img/archipel.gif" alt="attractions">
+                    <div class="layer">
+                        <h4 class="text-shadow">Pirana</h4>
+                    </div>
+                </a>
+                <a href="attractions/attraction.html" class="item moreExp showOrHide">
+                    <img src="img/archipel.gif" alt="attractions">
+                    <div class="layer">
+                        <h4 class="text-shadow">Python</h4>
+                    </div>
+                </a>
+                <a href="attractions/attraction.html" class="item moreExp showOrHide">
+                    <img src="img/archipel.gif" alt="attractions">
+                    <div class="layer">
+                        <h4 class="text-shadow">Carnaval Festival</h4>
+                    </div>
+                </a>
+                <a href="attractions/attraction.html" class="item moreExp showOrHide">
+                    <img src="img/archipel.gif" alt="attractions">
+                    <div class="layer">
+                        <h4 class="text-shadow">Stoomcarrousel</h4>
+                    </div>
+                </a>
+                <a href="attractions/attraction.html" class="item moreExp showOrHide">
+                    <img src="img/archipel.gif" alt="attractions">
+                    <div class="layer">
+                        <h4 class="text-shadow">Fata Morgana</h4>
+                    </div>
+                </a>
+                <a href="attractions/attraction.html" class="item moreExp showOrHide">
+                    <img src="img/archipel.gif" alt="attractions">
+                    <div class="layer">
+                        <h4 class="text-shadow">Kleuterhof</h4>
+                    </div>
+                </a>
+                <a href="attractions/attraction.html" class="item moreExp showOrHide">
+                    <img src="img/archipel.gif" alt="attractions">
+                    <div class="layer">
+                        <h4 class="text-shadow">Vogel Rok</h4>
+                    </div>
+                </a>
+                <a href="attractions/attraction.html" class="item moreExp showOrHide">
+                    <img src="img/archipel.gif" alt="attractions">
+                    <div class="layer">
+                        <h4 class="text-shadow">Villa Volta</h4>
+                    </div>
+                </a>
+                <a href="attractions/attraction.html" class="item moreExp showOrHide">
+                    <img src="img/archipel.gif" alt="attractions">
+                    <div class="layer">
+                        <h4 class="text-shadow">Anton Pieck Plein</h4>
+                    </div>
+                </a>
+                <a href="attractions/attraction.html" class="item moreExp showOrHide">
+                    <img src="img/archipel.gif" alt="attractions">
+                    <div class="layer">
+                        <h4 class="text-shadow">Halve Maen</h4>
+                    </div>
+                </a>
+                <a href="attractions/attraction.html" class="item moreExp showOrHide">
+                    <img src="img/archipel.gif" alt="attractions">
+                    <div class="layer">
+                        <h4 class="text-shadow">De Oude Tufferbaan</h4>
+                    </div>
+                </a>
+                <a href="attractions/attraction.html" class="item moreExp showOrHide">
+                    <img src="img/archipel.gif" alt="attractions">
+                    <div class="layer">
+                        <h4 class="text-shadow">Volk Van Laaf</h4>
+                    </div>
+                </a>
+                <a href="attractions/attraction.html" class="item moreExp showOrHide">
+                    <img src="img/archipel.gif" alt="attractions">
+                    <div class="layer">
+                        <h4 class="text-shadow">Monorail</h4>
+                    </div>
+                </a>
+                <a href="attractions/attraction.html" class="item moreExp showOrHide">
+                    <img src="img/archipel.gif" alt="attractions">
+                    <div class="layer">
+                        <h4 class="text-shadow">Pagode</h4>
+                    </div>
+                </a>
+                <a href="attractions/attraction.html" class="item moreExp showOrHide">
+                    <img src="img/archipel.gif" alt="attractions">
+                    <div class="layer">
+                        <h4 class="text-shadow">Kindervreugd</h4>
+                    </div>
+                </a>
+                <a href="attractions/attraction.html" class="item moreExp showOrHide">
+                    <img src="img/archipel.gif" alt="attractions">
+                    <div class="layer">
+                        <h4 class="text-shadow">Kinderspoor</h4>
+                    </div>
+                </a>
+                <a href="attractions/attraction.html" class="item moreExp showOrHide">
+                    <img src="img/archipel.gif" alt="attractions">
+                    <div class="layer">
+                        <h4 class="text-shadow">Gondoletta</h4>
+                    </div>
+                </a>
+                <a href="attractions/attraction.html" class="item moreExp showOrHide">
+                    <img src="img/archipel.gif" alt="attractions">
+                    <div class="layer">
+                        <h4 class="text-shadow">Efteling Museum</h4>
+                    </div>
+                </a>
+                <a href="attractions/attraction.html" class="item moreExp showOrHide">
+                    <img src="img/archipel.gif" alt="attractions">
+                    <div class="layer">
+                        <h4 class="text-shadow">Spookslot</h4>
+                    </div>
+                </a>
+                <a href="attractions/attraction.html" class="item moreExp showOrHide">
+                    <img src="img/archipel.gif" alt="attractions">
+                    <div class="layer">
+                        <h4 class="text-shadow">Diorama</h4>
+                    </div>
+                </a>
+                <a href="attractions/attraction.html" class="item moreExp showOrHide">
+                    <img src="img/archipel.gif" alt="attractions">
+                    <div class="layer">
+                        <h4 class="text-shadow">Game Gallery</h4>
+                    </div>
+                </a>
+                <a href="attractions/attraction.html" class="item moreExp showOrHide">
+                    <img src="img/archipel.gif" alt="attractions">
+                    <div class="layer">
+                        <h4 class="text-shadow">Holle Bolle Gijs</h4>
+                    </div>
+                </a>
+                <a href="attractions/attraction.html" class="item moreExp showOrHide">
+                    <img src="img/archipel.gif" alt="attractions">
+                    <div class="layer">
+                        <h4 class="text-shadow">Stoomtrein</h4>
+                    </div>
+                </a>
+            </div>
+
+            <button id="moreExp" onclick="moreExp()">See More</button>
+        </section>
+
+        <!-- Dinner Section -->
+        <section id="din" class="din bg-lightgrey">
+            <div class="brief even">
+                <div class="brief-text">
+                    <h2>Leisure & Dinner</h2>
+                    <p>I am a front-end web developer. I can provide clean code and pixel
+                        design. A responsive design makes your website accessible to
+                        all users, regardless of their device.
+                    </p>
+                </div>
+                <img src="img/din.gif" alt="dinner">
+            </div>
+            
+            <div class="ready">
+                <h3>Check out our restaurants</h3>
+            </div>
+
+            <div class="list">
+                <div class="item img">
+                    <img src="img/restaurant.gif" alt="">
+                </div>
+                <div class="item text">
+                    <h4>Wapen Van Raveleijn</h4>
+                    <img src="img/dining.png" alt="dinning">
+                    <table>
+                        <tr>
+                            <td>Dishes: </td>
+                            <td>Snacks</td>
+                        </tr>
+                        <tr>
+                            <td>Service:</td>
+                            <td>Vegetarian</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="item img">
+                    <img src="img/restaurant.gif" alt="">
+                </div>
+                <div class="item text">
+                    <h4>Backerei Krumel</h4>
+                    <img src="img/dining.png" alt="dinning">
+                    <table>
+                        <tr>
+                            <td>Dishes: </td>
+                            <td>Snacks</td>
+                        </tr>
+                        <tr>
+                            <td>Service:</td>
+                            <td>Vegetarian</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="item img">
+                    <img src="img/restaurant.gif" alt="">
+                </div>
+                <div class="item text">
+                    <h4>'tVerwende Nest</h4>
+                    <img src="img/dining.png" alt="dinning">
+                    <table>
+                        <tr>
+                            <td>Dishes: </td>
+                            <td>Snacks</td>
+                        </tr>
+                        <tr>
+                            <td>Service:</td>
+                            <td>Vegetarian</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="item img">
+                    <img src="img/restaurant.gif" alt="">
+                </div>
+                <div class="item text">
+                    <h4>Frau Boltes Kuche</h4>
+                    <img src="img/dining.png" alt="dinning">
+                    <table>
+                        <tr>
+                            <td>Dishes: </td>
+                            <td>Snacks</td>
+                        </tr>
+                        <tr>
+                            <td>Service:</td>
+                            <td>Vegetarian</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <!-- See more or less start from here -->
+                <div class="item moreDin showOrHide img">
+                    <img src="img/restaurant.gif" alt="">
+                </div>
+                <div class="item moreDin showOrHide text">
+                    <h4>Fabula Restaurant</h4>
+                    <img src="img/dining.png" alt="dinning">
+                    <table>
+                        <tr>
+                            <td>Dishes: </td>
+                            <td>Snacks</td>
+                        </tr>
+                        <tr>
+                            <td>Service:</td>
+                            <td>Vegetarian</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="item moreDin showOrHide img">
+                    <img src="img/restaurant.gif" alt="">
+                </div>
+                <div class="item moreDin showOrHide text">
+                    <h4>Polles Keuken</h4>
+                    <img src="img/dining.png" alt="dinning">
+                    <table>
+                        <tr>
+                            <td>Dishes: </td>
+                            <td>Snacks</td>
+                        </tr>
+                        <tr>
+                            <td>Service:</td>
+                            <td>Vegetarian</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="item moreDin showOrHide img">
+                    <img src="img/restaurant.gif" alt="">
+                </div>
+                <div class="item moreDin showOrHide text">
+                    <h4>Panorama à la carte</h4>
+                    <img src="img/dining.png" alt="dinning">
+                    <table>
+                        <tr>
+                            <td>Dishes: </td>
+                            <td>Snacks</td>
+                        </tr>
+                        <tr>
+                            <td>Service:</td>
+                            <td>Vegetarian</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="item moreDin showOrHide img">
+                    <img src="img/restaurant.gif" alt="">
+                </div>
+                <div class="item moreDin showOrHide text">
+                    <h4>Pinokkio's pizza & pasta</h4>
+                    <img src="img/dining.png" alt="dinning">
+                    <table>
+                        <tr>
+                            <td>Dishes: </td>
+                            <td>Snacks</td>
+                        </tr>
+                        <tr>
+                            <td>Service:</td>
+                            <td>Vegetarian</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="item moreDin showOrHide img">
+                    <img src="img/restaurant.gif" alt="">
+                </div>
+                <div class="item moreDin showOrHide text">
+                    <h4>In de Gelaarsde Kat</h4>
+                    <img src="img/dining.png" alt="dinning">
+                    <table>
+                        <tr>
+                            <td>Dishes: </td>
+                            <td>Snacks</td>
+                        </tr>
+                        <tr>
+                            <td>Service:</td>
+                            <td>Vegetarian</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="item moreDin showOrHide img">
+                    <img src="img/restaurant.gif" alt="">
+                </div>
+                <div class="item moreDin showOrHide text">
+                    <h4>De Vrolijke Noot</h4>
+                    <img src="img/dining.png" alt="dinning">
+                    <table>
+                        <tr>
+                            <td>Dishes: </td>
+                            <td>Snacks</td>
+                        </tr>
+                        <tr>
+                            <td>Service:</td>
+                            <td>Vegetarian</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="item moreDin showOrHide img">
+                    <img src="img/restaurant.gif" alt="">
+                </div>
+                <div class="item moreDin showOrHide text">
+                    <h4>Het Witte Paard</h4>
+                    <img src="img/dining.png" alt="dinning">
+                    <table>
+                        <tr>
+                            <td>Dishes: </td>
+                            <td>Snacks</td>
+                        </tr>
+                        <tr>
+                            <td>Service:</td>
+                            <td>Vegetarian</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="item moreDin showOrHide img">
+                    <img src="img/restaurant.gif" alt="">
+                </div>
+                <div class="item moreDin showOrHide text">
+                    <h4>Kleyne Klaroen</h4>
+                    <img src="img/dining.png" alt="dinning">
+                    <table>
+                        <tr>
+                            <td>Dishes: </td>
+                            <td>Snacks</td>
+                        </tr>
+                        <tr>
+                            <td>Service:</td>
+                            <td>Vegetarian</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="item moreDin showOrHide img">
+                    <img src="img/restaurant.gif" alt="">
+                </div>
+                <div class="item moreDin showOrHide text">
+                    <h4>'t Melkhuysje</h4>
+                    <img src="img/dining.png" alt="dinning">
+                    <table>
+                        <tr>
+                            <td>Dishes: </td>
+                            <td>Snacks</td>
+                        </tr>
+                        <tr>
+                            <td>Service:</td>
+                            <td>Vegetarian</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="item moreDin showOrHide img">
+                    <img src="img/restaurant.gif" alt="">
+                </div>
+                <div class="item moreDin showOrHide text">
+                    <h4>Panorama self service</h4>
+                    <img src="img/dining.png" alt="dinning">
+                    <table>
+                        <tr>
+                            <td>Dishes: </td>
+                            <td>Snacks</td>
+                        </tr>
+                        <tr>
+                            <td>Service:</td>
+                            <td>Vegetarian</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="item moreDin showOrHide img">
+                    <img src="img/restaurant.gif" alt="">
+                </div>
+                <div class="item moreDin showOrHide text">
+                    <h4>'t Poffertje</h4>
+                    <img src="img/dining.png" alt="dinning">
+                    <table>
+                        <tr>
+                            <td>Dishes: </td>
+                            <td>Snacks</td>
+                        </tr>
+                        <tr>
+                            <td>Service:</td>
+                            <td>Vegetarian</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="item moreDin showOrHide img">
+                    <img src="img/restaurant.gif" alt="">
+                </div>
+                <div class="item moreDin showOrHide text">
+                    <h4>Station de Oost</h4>
+                    <img src="img/dining.png" alt="dinning">
+                    <table>
+                        <tr>
+                            <td>Dishes: </td>
+                            <td>Snacks</td>
+                        </tr>
+                        <tr>
+                            <td>Service:</td>
+                            <td>Vegetarian</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="item moreDin showOrHide img">
+                    <img src="img/restaurant.gif" alt="">
+                </div>
+                <div class="item moreDin showOrHide text">
+                    <h4>Toko Pagode</h4>
+                    <img src="img/dining.png" alt="dinning">
+                    <table>
+                        <tr>
+                            <td>Dishes: </td>
+                            <td>Snacks</td>
+                        </tr>
+                        <tr>
+                            <td>Service:</td>
+                            <td>Vegetarian</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <button id="moreDin" onclick="moreDin()">See More</button>
+        </section>
+    
+        <!-- Characters Section -->
+        <section id="char" class="char">
+            <div class="brief odd">
+                <img src="img/char.gif" alt="map">
+                <div class="brief-text">
+                    <h2>Park Characters</h2>
+                    <p>
+                        I also make the website more and more interactive
+                        with web animations. I can provide clean code and pixel perfect
+                        design. A responsive design makes your website accessible to
+                        all users, regardless of their device.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="ready">
+                <h3>Want to play with me?</h3>
+            </div>
+
+            <div class="list">
+                <a href="chars/chars.html" class="item">
+                    <img src="img/fairytale-tree.png" alt="">
+                    <h4>Jokie</h4>
+                </a>
+                <a href="chars/chars.html" class="item">
+                    <img src="img/fairytale-tree.png" alt="characters">
+                    <h4>Jet</h4>
+                </a>
+                <a href="chars/chars.html" class="item">
+                    <img src="img/fairytale-tree.png" alt="characters">
+                    <h4>Cinderella</h4>
+                </a>
+                <a href="chars/chars.html" class="item">
+                    <img src="img/fairytale-tree.png" alt="characters">
+                    <h4> Little Red Riding Hood</h4>
+                </a>
+                <a href="chars/chars.html" class="item">
+                    <img src="img/fairytale-tree.png" alt="characters">
+                    <h4>Long Neck</h4>
+                </a>
+                <a href="chars/chars.html" class="item">
+                    <img src="img/fairytale-tree.png" alt="characters">
+                    <h4>Tom Thumb</h4>
+                </a>
+                <a href="chars/chars.html" class="item">
+                    <img src="img/fairytale-tree.png" alt="characters">
+                    <h4>Gnome Ku</h4>
+                </a>
+                <a href="chars/chars.html" class="item">
+                    <img src="img/fairytale-tree.png" alt="characters">
+                    <h4>Gnome Ko</h4>
+                </a>
+
+                <!-- See more or less start from here -->
+                <a href="chars/chars.html" class="item moreChar showOrHide">
+                    <img src="img/fairytale-tree.png" alt="characters">
+                    <h4>Giant</h4>
+                </a>
+                <a href="chars/chars.html" class="item moreChar showOrHide">
+                    <img src="img/fairytale-tree.png" alt="characters">
+                    <h4>Witch</h4>
+                </a>
+                <a href="chars/chars.html" class="item moreChar showOrHide">
+                    <img src="img/fairytale-tree.png" alt="characters">
+                    <h4>Fakir</h4>
+                </a>
+                <a href="chars/chars.html" class="item moreChar showOrHide">
+                    <img src="img/fairytale-tree.png" alt="characters">
+                    <h4>Donkey</h4>
+                </a>
+                <a href="chars/chars.html" class="item moreChar showOrHide">
+                    <img src="img/fairytale-tree.png" alt="characters">
+                    <h4>Dragon</h4>
+                </a>
+                <a href="chars/chars.html" class="item moreChar showOrHide">
+                    <img src="img/fairytale-tree.png" alt="characters">
+                    <h4>Gnome Kie</h4>
+                </a>
+                <a href="chars/chars.html" class="item moreChar showOrHide">
+                    <img src="img/fairytale-tree.png" alt="characters">
+                    <h4>Fairytale Tree</h4>
+                </a>
+                <a href="chars/chars.html" class="item moreChar showOrHide">
+                    <img src="img/fairytale-tree.png" alt="characters">
+                    <h4>Gnome Kei</h4>
+                </a>
+                <a href="chars/chars.html" class="item moreChar showOrHide">
+                    <img src="img/fairytale-tree.png" alt="characters">
+                    <h4>Gnome Keu</h4>
+                </a>
+                <a href="chars/chars.html" class="item moreChar showOrHide">
+                    <img src="img/fairytale-tree.png" alt="characters">
+                    <h4>Gnome Ke</h4>
+                </a>
+                <a href="chars/chars.html" class="item moreChar showOrHide">
+                    <img src="img/fairytale-tree.png" alt="characters">
+                    <h4>Goat Benjamin</h4>
+                </a>
+                <a href="chars/chars.html" class="item moreChar showOrHide">
+                    <img src="img/fairytale-tree.png" alt="characters">
+                    <h4>Gnome Ka</h4>
+                </a>
+                <a href="chars/chars.html" class="item moreChar showOrHide">
+                    <img src="img/fairytale-tree.png" alt="characters">
+                    <h4>Wolf</h4>
+                </a>
+                <a href="chars/chars.html" class="item moreChar showOrHide">
+                    <img src="img/fairytale-tree.png" alt="characters">
+                    <h4>Grandmaster Almar</h4>
+                </a>
+                <a href="chars/chars.html" class="item moreChar showOrHide">
+                    <img src="img/fairytale-tree.png" alt="characters">
+                    <h4>Pantagor</h4>
+                </a>
+                <a href="chars/chars.html" class="item moreChar showOrHide">
+                    <img src="img/fairytale-tree.png" alt="characters">
+                    <h4>Pardoes</h4>
+                </a>
+                <a href="chars/chars.html" class="item moreChar showOrHide">
+                    <img src="img/fairytale-tree.png" alt="characters">
+                    <h4>Pardijn</h4>
+                </a>
+                <a href="chars/chars.html" class="item moreChar showOrHide">
+                    <img src="img/fairytale-tree.png" alt="characters">
+                    <h4>Aliciana</h4>
+                </a>
+                <a href="chars/chars.html" class="item moreChar showOrHide">
+                    <img src="img/fairytale-tree.png" alt="characters">
+                    <h4>Pardulfus</h4>
+                </a>
+                <a href="chars/chars.html" class="item moreChar showOrHide">
+                    <img src="img/fairytale-tree.png" alt="characters">
+                    <h4>Polle</h4>
+                </a>
+                <a href="chars/chars.html" class="item moreChar showOrHide">
+                    <img src="img/fairytale-tree.png" alt="characters">
+                    <h4>Rattar</h4>
+                </a>
+                <a href="chars/chars.html" class="item moreChar showOrHide">
+                    <img src="img/fairytale-tree.png" alt="characters">
+                    <h4>O.J. Punctuel</h4>
+                </a>
+                <a href="chars/chars.html" class="item moreChar showOrHide">
+                    <img src="img/fairytale-tree.png" alt="characters">
+                    <h4>Count Olaf Grafhart</h4>
+                </a>
+                <a href="chars/chars.html" class="item moreChar showOrHide">
+                    <img src="img/fairytale-tree.png" alt="characters">
+                    <h4>Joost</h4>
+                </a>
+                <a href="chars/chars.html" class="item moreChar showOrHide">
+                    <img src="img/fairytale-tree.png" alt="characters">
+                    <h4>Countess Halina</h4>
+                </a>
+                <a href="chars/chars.html" class="item moreChar showOrHide">
+                    <img src="img/fairytale-tree.png" alt="characters">
+                    <h4>Maurits</h4>
+                </a>
+                <a href="chars/chars.html" class="item moreChar showOrHide">
+                    <img src="img/fairytale-tree.png" alt="characters">
+                    <h4>Lisa</h4>
+                </a>
+                <a href="chars/chars.html" class="item moreChar showOrHide">
+                    <img src="img/fairytale-tree.png" alt="characters">
+                    <h4>Samira</h4>
+                </a>
+                <a href="chars/chars.html" class="item moreChar showOrHide">
+                    <img src="img/fairytale-tree.png" alt="characters">
+                    <h4>Samuël</h4>
+                </a>
+                <a href="chars/chars.html" class="item moreChar showOrHide">
+                    <img src="img/fairytale-tree.png" alt="characters">
+                    <h4>Thomas</h4>
+                </a>
+                <a href="chars/chars.html" class="item moreChar showOrHide">
+                    <img src="img/fairytale-tree.png" alt="characters">
+                    <h4>Emma</h4>
+                </a>
+            </div>
+
+            <button id="moreChar" onclick="moreChar()">See More</button>
+        </section>
+    
+        <!-- Whatsup Section -->
+        <section id="whatsup" class="whatsup bg-lightgrey">
+            <div class="brief even">
+                <div class="brief-text">
+                    <h2>Whatsup</h2>
+                    <p>I am a front-end web developer. I can provide clean code and pixel
+                        perfect design. I also make the website more and more interactive
+                        with web animations. I also make the website more and more interactive with web
+                        animations. A responsive design makes your website accessible to
+                        all users, regardless of their device.
+                    </p>
+                </div>
+                <img src="img/whatsup.gif" alt="show-and-entertainment">
+            </div>
+            
+            <div class="ready">
+                <h3>Shows and Entertainment</h3>
+            </div>
+
+            <div class="list">
+                <div class="item">
+                    <img src="img/event.gif">
+                    <p>20 Apr 2022</p>
+                    <h4>Park show: Raveleijn</h4>
+                    <a href="whatsup/whatsup.html">Read More</a>
+                </div>
+                
+                <div class="item">
+                    <img src="img/event.gif">
+                    <p>20 Apr 2022</p>
+                    <h4>Water show: Aquanura</h4>
+                    <a href="whatsup/whatsup.html">Read More</a>
+                </div>
+
+                <div class="item">
+                    <img src="img/event.gif">
+                    <p>20 Apr 2022</p>
+                    <h4>Live entertainment: The Fairytale Collector</h4>
+                    <a href="whatsup/whatsup.html">Read More</a>
+                </div>
+
+                <div class="item">
+                    <img src="img/event.gif">
+                    <p>20 Apr 2022</p>
+                    <h4>Park show: Sprookjesboomshow</h4>
+                    <a href="whatsup/whatsup.html">Read More</a>
+                </div>
+
+                <div class="item">
+                    <img src="img/event.gif">
+                    <p>20 Apr 2022</p>
+                    <h4>Meet and greet: Pardoes the magician</h4>
+                    <a href="whatsup/whatsup.html">Read More</a>
+                </div>
+
+                <div class="item">
+                    <img src="img/event.gif">
+                    <p>20 Apr 2022</p>
+                    <h4>Park show: Jokie en Jet</h4>
+                    <a href="whatsup/whatsup.html">Read More</a>
+                </div>
+
+                <!-- See more or less start from here -->
+                <div class="item moreWhatsup showOrHide">
+                    <img src="img/event.gif">
+                    <p>20 Apr 2022</p>
+                    <h4>Meet and greet: Efteling inhabitants</h4>
+                    <a href="whatsup/whatsup.html">Read More</a>
+                </div>
+                <div class="item moreWhatsup showOrHide">
+                    <img src="img/event.gif">
+                    <p>20 Apr 2022</p>
+                    <h4>Getting started with business level improved</h4>
+                    <a href="whatsup/whatsup.html">Read More</a>
+                </div>
+                <div class="item moreWhatsup showOrHide">
+                    <img src="img/event.gif">
+                    <p>20 Apr 2022</p>
+                    <h4>Getting started with business level improved</h4>
+                    <a href="whatsup/whatsup.html">Read More</a>
+                </div>
+                <div class="item moreWhatsup showOrHide">
+                    <img src="img/event.gif">
+                    <p>20 Apr 2022</p>
+                    <h4>Getting started with business level improved</h4>
+                    <a href="whatsup/whatsup.html">Read More</a>
+                </div>
+                <div class="item moreWhatsup showOrHide">
+                    <img src="img/event.gif">
+                    <p>20 Apr 2022</p>
+                    <h4>Getting started with business level improved</h4>
+                    <a href="whatsup/whatsup.html">Read More</a>
+                </div>
+                <div class="item moreWhatsup showOrHide">
+                    <img src="img/event.gif">
+                    <p>20 Apr 2022</p>
+                    <h4>Getting started with business level improved</h4>
+                    <a href="whatsup/whatsup.html">Read More</a>
+                </div>
+            </div>
+
+            <button id="moreWhatsup" onclick="moreWhatsup()">See More</button>
+        </section>
+
+        <!--Contact Section-->
+        <section id="info" class="info">
+            <h2>Contact Us</h2>
+            <div class="list">
+                <div class="item">
+                    <h3>Park Infomation</h3>
+                    <p>
+                        Address: No 1 Pasteur Street, District 3, HCM City.<br>
+                        Email: <a href="mailto:someone@example.com">thefunzone@gmail.com</a><br>
+                        Phone: 0888810000</p>
+                </div>
+
+                <div class="item">
+                    <img src="img/map.gif" alt="google map">
+                </div>
+
+                <div class="item">
+                    <img src="img/opp.gif" alt="business opportunities">
+                </div>
+
+                <div class="item">
+                    <h3>Business Opportunities</h3>
+                    <p>
+                        Do you want to held an meeting or event in the Fun Zone? 
+                        Or do you consider organising a business day out to our theme park?
+                    </p>
+                    <p>
+                        <strong>Business information:</strong><br>
+                        The Fun Zone<br>
+                        COC number: 18122297<br>
+                        VAT number: 007372930B01
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!--Footer Section-->
+    <div id="footer" class="footer bg-lightgrey">
+        <h3>subcribe for more</h3>
+        <div class="newlatter">
+            <input type="email" placeholder="Enter Your Email">
+            <a href="#subcribe" class="btn">Subcribe</a>
+        </div>
+        <div class="icon">
+            <a href="#icon"><i class="fa-brands fa-3x fa-facebook-square"></i></i></a>
+            <a href="#icon"><i class="fa-brands fa-3x fa-instagram-square"></i></a>
+            <a href="#icon"><i class="fa-brands fa-3x fa-whatsapp-square"></i></a>
+        </div>
+    </div>
+
+    <!-- the overlay for Menu -->
+    <div id="overlay"></div>
+
+    <!-- the scripts -->
+    <script src="js/menu.js"></script>
+    <script src="js/smooth.js"></script>
+    <script src="js/sticky.js"></script>
+    <script src="js/more.js"></script>
+</body>
+</html>

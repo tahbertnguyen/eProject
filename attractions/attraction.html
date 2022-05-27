@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/details.css">
+    <script src="https://kit.fontawesome.com/c313c8dbc7.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>The Fun Zone</title>
+</head>
+<body>
+    <div id="gap" class="gap"></div>
+
+    <div id="nav" class="nav">
+        <a class="logo" href="../index.html">
+            <img src="../img/logo.png" alt="logo">
+            <span>the fun zone</span>
+        </a>
+        <div id="navlist" class="navlist">
+            <a href="../index.html#home">HOME</a>
+            <a href="../index.html#exp">EXPERIENCE</a>
+            <a href="../index.html#din">LEISURE & DINNING</a>
+            <a href="../index.html#char">PARKS CHARACTERS</a>
+            <a href="../index.html#whatsup">WHATS UP</a>
+            <a href="../index.html#info">PARK INFORMATION</a>
+            <a href="../index.html#info">BUSINESS OPPORTUNITIES</a>
+            <i id="closeIcon" class="fa-solid fa-circle-xmark fa-3x"></i>
+        </div>
+        <i id="menuIcon" class="fa-solid fa-bars fa-2x" onclick="showMenu()"></i>
+    </div>
+
+    <!-- Wrapper All Sections -->
+    <div  class="wrapper">
+        <!-- Home Section -->
+        <section class="home" style="background: url(img/c.jpg) center/ cover">
+            <div class="home-layer"></div>
+            <div class="home-text">
+                <h1 class="text-shadow">Attractions</h1>
+            </div>
+        </section>
+    
+        <!-- Attractions Section -->
+        <section class="details">
+            <div class="details-text">
+                <h3>Be careful for the boyish tricks of Max and Moritz</h3>
+                <p>
+                    On the Max & Moritz double roller coaster, 
+                    you and the whole family experience an exciting and crazy ride full of tricks. 
+                    Escape from the cuckoo clock workshop with Max and Moritz in one of their soapboxes. 
+                    But be careful, you may encounter a little mischief from the boys along the way! 
+                    Which track will you choose, Max or Moritz?
+                </p>
+            </div>
+            <div class="details-gallery">
+                <img class="img1" src="img/a.jpg" alt="">
+                <img class="img2" src="img/b.jpg" alt="">
+                <img class="img3" src="img/c.jpg" alt="">
+                <img class="img4" src="img/d.jpg" alt="">
+                <img class="img5" src="img/e.jpg" alt="">
+            </div>
+        </section>
+    </div>
+
+    <!--Footer Section-->
+    <div class="footer bg-lightgrey">
+        <h3>subcribe for more</h3>
+        <div class="newlatter">
+            <input type="email" placeholder="Enter Your Email">
+            <a href="#subcribe" class="btn">Subcribe</a>
+        </div>
+        <div class="icon">
+            <a href="#icon"><i class="fa-brands fa-3x fa-facebook-square"></i></i></a>
+            <a href="#icon"><i class="fa-brands fa-3x fa-instagram-square"></i></a>
+            <a href="#icon"><i class="fa-brands fa-3x fa-whatsapp-square"></i></a>
+        </div>
+    </div>
+
+    <!-- the overlay for Menu -->
+    <div id="overlay"></div>
+
+    <!-- the scripts -->
+    <script src="../js/menu.js"></script>
+    <script src="../js/sticky.js"></script>
+</body>
+</html>
