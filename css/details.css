@@ -25,14 +25,13 @@ h3{
 .icon.fa-map-location-dot{
     position: static;}
 
-/* Gallery */
+/* Details Gallery */
 .details-gallery{
     display: grid;
     grid-gap: 0.5rem;}
 
 .slice-container{
     position: relative; 
-    width: 100%;
     height: 60vh;}
 
 .slice{
@@ -70,18 +69,18 @@ h3{
 
 .thumb-container{
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-gap: 0.5rem;}
+    grid-template-columns: repeat(auto-fit, minmax(1px, auto));
+    gap: 0.5rem;}
 
-img.thumb{
+.thumb{
     width: 100%;
     opacity: 0.6;}
 
-img.thumb:hover, img.slice-active{
+.thumb:hover, .slice-active{
     opacity: 1;
     cursor: pointer;}
 
-/* Others */
+/* Details | Others */
 .details-char{
     position: relative;
     padding-bottom: 0} /* for char-img */
