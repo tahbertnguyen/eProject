@@ -9,7 +9,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Belleza&display=swap');
 
-/* Style Defaults ---------------------------------- */
+/* Style Defaults ------------------------------ */
 *{
     box-sizing: border-box;
     padding: 0; margin: 0;
@@ -21,47 +21,48 @@
     font-size: 100%;
     color: black;}
 
-:root {
+:root{
     --grey: #ccc;
     --lightgrey: #F9F9F9;
     --darkgrey: #282A35;
     --lightpink: #FFC0C7;
     --lightyellow: #F8ECD1;
+    --brown: #4D3928;
     --red: #B71234;}
 
-h1 {
+h1{
     font-family: "Playfair Display";
     font-size: 5vw;
     letter-spacing: 3px;
     color: var(--lightgrey);}
 
-h2 {
+h2{
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 4.5vw;
     font-weight: 700;
     margin-bottom: 1.2rem;
     color: var(--darkgrey);}
 
-h3 {
+h3{
     font-family: 'Mulish', sans-serif;
     font-size: 2.8vw;
     font-weight: 700;
     margin-top: 1.2rem;
     color: var(--red); }
 
-h4 {
+h4{
     font-family: 'Belleza', sans-serif;
     font-size: 1.8rem;
     font-weight: 500;
     color: var(--darkgrey);}
 
-a:hover {
+a:hover{
     color: var(--red);}
 
-p {
+p{
     line-height: 1.6rem;}
 
-.btn {
+.btn{
     display: inline-block; /* reseting the link button */
     cursor: pointer; /* reseting the typical button */
     padding: 8px 20px;
@@ -72,29 +73,30 @@ p {
     background: var(--red);
     transition: all .3s;}
 
-.btn:hover {
+.btn:hover{
     border: 2px double var(--red);
     background: white;}
 
-.btn.ticket {
+.btn.ticket{
+    opacity: 0.9;
     margin: 2% 0;}
 
-.btn.ticket:hover {
+.btn.ticket:hover{
+    opacity: 1;
     transform: translateY(-5px);}
 
-.btn.more {
-    border: 1px solid transparent;
-    border-bottom: 1px solid var(--red);
+.btn.more{
+    border: 2px solid var(--lightpink);
     color: var(--darkgrey);
     background: transparent;
     transition: all 0s;}
 
-.btn.more:hover {
+.btn.more:hover{
     font-weight: 600;
-    border-bottom: 2px solid var(--red);
+    border: 2px solid var(--red);
     color: var(--red);}
 
-.btn.subcribe:hover {
+.btn.subcribe:hover{
     transform: translateX(5px);}
 
 .icon{
@@ -102,47 +104,88 @@ p {
     color: var(--darkgrey);
     cursor: pointer;}
 
-.icon.fa-bars {
+.icon.fa-bars{
     display: none;
     font-size: 2.4rem;
     color: var(--lightgrey);}
 
-.icon.fa-circle-xmark {
-    display: none;
+.icon.fa-circle-xmark{
     position: absolute;
-    left: 50%; bottom: -15%;
-    transform: translateX(-50%);
     color: rgba(0,0,0,0.7);}
+    
+#closeMenu{
+    display: none;
+    left: 50%; bottom: -15%;
+    transform: translateX(-50%);}
 
-.icon.fa-brands {
+.icon.closeMap{
+    top: 2rem; right: 2rem;
+    color: var(--lightgrey);}
+
+.icon.fa-brands{
     margin: 0px 6px;
     transition: all .3s;}
 
-.icon.fa-brands:hover {
+.icon.fa-brands:hover{
     color: var(--red);
     transform: translateY(-5px);}
 
-.bg-lightgrey {
+.icon.fa-map-location-dot{
+    position: absolute;
+    font-size: 2rem;
+    top: 2%; right: 2%;}
+
+.bg-lightgrey{
     background: #eee;}
 
-.text-shadow {
+.text-shadow{
     text-shadow: 2px 2px 2px rgb(0 0 0 / 60%);}
 
 table tr td{
+    vertical-align: top;
     padding: 4px 8px 4px 0;}
 
 table tr td:first-child{
+    white-space: nowrap;
     font-weight: 600;}
 
-/* Style the basic layout -------------------------------- */
-.gap {
+/* Popup | Map ------------------------------ */
+.map-layer {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    top: 0; left: 0;
+    width: 100%; height: 100vh;
+    background: rgba(0,0,0);
+    background: rgba(0,0,0,0.4);
+    overflow: auto;
+    -webkit-animation: animateMap 0.4s;
+    animation: animateMap 0.4s;}
+
+.map-img{
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%; height: auto;}
+
+/* Animation | Map */
+@-webkit-keyframes animateMap {
+    from {left:-100%; opacity:0}
+    to {left:0; opacity:1}}
+  
+@keyframes animateMap {
+    from {left:-100%; opacity:0}
+    to {left:0; opacity:1}}
+
+/* Layout | Basic ------------------------------ */
+.gap{
     height: 54px;}
 
-.wrapper {
+.wrapper{
     margin-top: -150px}
 
-/* Style the navigation ---------------------------------- */
-.nav {
+/* Navigation ------------------------------ */
+.nav{
     display: flex; 
     align-items: center;
     position: sticky; 
@@ -155,17 +198,17 @@ table tr td:first-child{
     background: transparent;
     transition: all 0.3s;}
 
-.logo {
+.logo{
     flex: 20%;
     position: relative;
 }
-.logo:hover {
+.logo:hover{
     opacity: 0.8;}
 
-.logo img {
+.logo img{
     width: 50px;}
 
-.logo span {
+.logo span{
     position: absolute;
     left: 60px;
     bottom: -6px;
@@ -174,20 +217,20 @@ table tr td:first-child{
     font-weight: 500;
     color: var(--lightgrey);}
 
-.navlist {
+.navlist{
     position: relative;
     transform: translate(0);
     flex: 80%;
     display: flex;
     justify-content: flex-end;}
 
-.navlist a {
+.navlist a{
     position: relative;
     color: var(--lightgrey);
     font-family: 'Oswald', sans-serif;
     margin: 0 0 0 18px;}
 
-.navlist a::after {
+.navlist a::after{
     position: absolute;
     content: "";
     width: 0;
@@ -197,118 +240,118 @@ table tr td:first-child{
     background: var(--red);
     transition: all 0.3s;}
 
-.navlist a:hover {
+.navlist a:hover{
     color: var(--lightpink);}
 
-.navlist a:hover::after {
+.navlist a:hover::after{
     left: 0;
     width: 100%;}
 
-#overlay {
+#overlay{
     display: none;
     position: fixed;
     top: 0; left: 0;
     width: 100%; height: 100vh;}
 
-/* Style the Header when sticky ------------------------ */
-.nav.sticky {
+/* Navigation | Sticky ------------------------------ */
+.nav.sticky{
     background: var(--lightgrey);
     transition: all 0.3s;
     -moz-box-shadow:    0 3px 6px -6px var(--darkgrey);
     -webkit-box-shadow: 0 3px 6px -6px var(--darkgrey);
-    box-shadow:         0 3px 6px -6px var(--darkgrey);
-}
-.nav.sticky .logo img {
-    color: var(--darkgrey);
-}
-.nav.sticky .logo span {
-    color: var(--red);
-}
-.nav.sticky .navlist a {
-    color: var(--darkgrey);
-}
-.nav.sticky .navlist a:hover {
-    color: var(--red);
-}
-.nav.sticky .fa-bars {
-    color: var(--darkgrey);
-}
+    box-shadow:         0 3px 6px -6px var(--darkgrey);}
 
-/* All Sections ---------------------------- */
+.nav.sticky .logo img{
+    color: var(--darkgrey);}
+
+.nav.sticky .logo span{
+    color: var(--red);}
+
+.nav.sticky .navlist a{
+    color: var(--darkgrey);}
+
+.nav.sticky .navlist a:hover{
+    color: var(--red);}
+
+.nav.sticky .fa-bars{
+    color: var(--darkgrey);}
+
+/* Section | All ------------------------------ */
 section{
-    padding: 120px 16%;
     display: grid;
     grid-gap: 2rem;
-}
+    padding: 120px 16%;}
+
 .brief{
     display: grid;
     grid-gap: 2rem;
-    align-items: center;
-}
-.brief.odd {
-    grid-template-columns: 2fr 1fr;
-}
-.brief.even {
-    grid-template-columns: 1fr 2fr;
-}
+    align-items: center;}
+
+.brief.odd{
+    grid-template-columns: 2fr 1fr;}
+
+.brief.even{
+    grid-template-columns: 1fr 2fr;}
+
 .brief img{
     width: 100%;
     height: auto;
-    border-radius: 6px;
+    border-radius: 6px;}
+.ready h3 {
+    border-left: 10px double var(--brown);
+    line-height: 120%;
+    padding: 0 0 0 10px;
 }
 .list{
     display: grid;
-    grid-gap: 2rem;
-}
+    grid-gap: 2rem;}
+
 .list .item{
     display: block;
     position: relative;
-    transform: scale(1);
-    transition: all 1s;
-}
-.item.showOrHide {
-    position: fixed;
-    transform: scale(0);
-    transition: all 1s;
-}
+    transition: all 0.3s;}
 
-/* Home Section ------------------------------ */
+.item.showOrHide{
+    position: fixed;
+    transform: scale(0);}
+    
+/* SECTION | Home ------------------------------ */
 .home{
     position: relative;
     top: 0; left: 0;
     width: 100%; height: 100vh;
     text-align: center;
-    background: url('../img/home.jpg') bottom right/cover;
-}
-.home-layer {
+    background: url('../img/home.jpg') bottom right/cover;}
+
+.home-layer{
     position: absolute;
     width: 100%; height: 100%;
-    background: rgba(0,0,0,0.2);
-}
-.home-text {
+    background: rgba(0,0,0,0.2);}
+
+.home-text{
     position: absolute;
     top: 50%; left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
-    padding: 0 4%;
-}
-.home-text p {
+    padding: 0 4%;}
+
+.home-text p{
     font-family: "Playfair Display";
     font-size: 3vw;
     margin: 2%;
     letter-spacing: 2px;
-    color: var(--lightgrey);
-}
+    color: var(--lightgrey);}
 
-/* Experience Section ------------------------------- */
+
+/* SECTION | Experience ------------------------------ */
 .exp .list{
-    grid-template-columns: repeat(auto-fit, minmax(220px, auto));
-}
+    grid-template-columns: repeat(auto-fit, minmax(220px, auto));}
+
 .exp .list .item img{
     display: block;
     width: 100%;
-    border-radius: 6px;
-}
+    border-radius: 6px;}
+
 .layer{
     position: absolute;
     top: 0; left: 0;    
@@ -316,12 +359,12 @@ section{
     width: 100%;
     background: transparent;
     border-radius: 6px;
-    transition: all .3s;
-}
-.layer:hover {
-    background: linear-gradient(rgba(22,2,22,0) 0%, rgba(22,2,22,0.6) 100%);
-}
-.layer h4 {
+    transition: all .3s;}
+
+.layer:hover{
+    background: linear-gradient(rgba(22,2,22,0) 0%, rgba(22,2,22,0.6) 100%);}
+
+.layer h4{
     position: absolute;
     left: 50%; top: 80%;
     transform: translate(-50%, -50%);
@@ -330,10 +373,9 @@ section{
     padding: 0 4px;
     font-family: "Lobster";
     font-size: 2rem;
-    color: var(--lightgrey);
-}
-
-/* Dinner Section ------------------------------- */
+    color: var(--lightgrey);}
+    
+/* SECTION | Dinner ------------------------------ */
 .din .list{
     grid-template-columns: 1fr 2fr;}
 
@@ -345,23 +387,31 @@ section{
 .item.text h4{
     margin-bottom: 2%;}
 
-.item.text img{
-    position: absolute;
-    width: 36px;
-    top: 2%; right: 2%;}
-
-/* Park Characters Section ------------------------------- */
+/* SECTION | Park Characters ------------------------------ */
 .char .list{
-    grid-template-columns: repeat(auto-fit, minmax(210px, auto));
-}
+    grid-template-columns: repeat(auto-fit, minmax(210px, auto));}
+
 .char .list .item img{
     display: block;
-    width: 100%;
-}
+    width: 100%;}
+
 .char .list .item:hover img{
-    transform: translateY(-6px);
-    transition: all 0.3s;
-}
+    animation: shake 0.5s infinite;}
+
+/* Animation | Shake */
+@keyframes shake {
+    0% {transform: translate(1px, 1px) rotate(0deg);}
+    10% {transform: translate(-1px, -2px) rotate(-1deg);}
+    20% {transform: translate(-3px, 0px) rotate(1deg);}
+    30% {transform: translate(3px, 2px) rotate(0deg);}
+    40% {transform: translate(1px, -1px) rotate(1deg);}
+    50% {transform: translate(-1px, 2px) rotate(-1deg);}
+    60% {transform: translate(-3px, 1px) rotate(0deg);}
+    70% {transform: translate(3px, 1px) rotate(-1deg);}
+    80% {transform: translate(-1px, -1px) rotate(1deg);}
+    90% {transform: translate(1px, 2px) rotate(0deg);}
+    100% {transform: translate(1px, -2px) rotate(-1deg);}}
+
 .char .list .item h4{
     position: absolute;
     left: 50%; top: 90%;
@@ -371,72 +421,69 @@ section{
     padding: 0 4px;
     font-family: 'Rancho', cursive;
     font-size: 1.8rem;
-    color: #4D3928;
-}
+    color: #4D3928;}
 
-/* Whatsup Section ------------------------------- */
+
+/* SECTION | Whatsup ------------------------------ */
 .whatsup .list{
-    grid-template-columns: repeat(auto-fit, minmax(220px, auto));
-}
+    grid-template-columns: repeat(auto-fit, minmax(220px, auto));}
+
 .whatsup .list .item{
     padding: 0 0 30px 0;
     border-radius: 6px;;
-    transition: all .35s;
-    background: white;
-}
-.whatsup .list .item:hover {
-    box-shadow: 0px 20px 30px rgb(55 7 23 / 7%);
-}
+    background: white;}
+
+.whatsup .list .item:hover{
+    box-shadow: 0px 20px 30px rgb(55 7 23 / 7%);}
+
 .whatsup .list img{
     width: 100%;
-    border-radius: 6px 6px 0 0;
-}
+    border-radius: 6px 6px 0 0;}
+
 .whatsup .list p{
     font-size: 14px;
     font-weight: 500;
     margin: 10px 0px 8px 25px;
-    color: #6a6a6a;
-}
+    color: #6a6a6a;}
+
 .whatsup .list h4{
     margin: 10px 4px 8px 25px;
     line-height: 1.45;
     font-size: 22px;
     font-weight: 600;
-    transition: all .35s;
-}
+    transition: all .35s;}
+
 .whatsup .list h4:hover{
-    color: var(--red);
-}
-.whatsup .list a {
+    color: var(--red);}
+
+.whatsup .list a{
     margin: 10px 0px 8px 25px;
     font-size: var(--p-font);
     font-weight: 400;
     line-height: 1.8;
     border-bottom: 2px solid transparent;
     color: #6a6a6a;
-    transition: all .35s;
-}
-.whatsup .list a:hover {
-    border-bottom: 2px solid var(--red);
-    color: var(--red);
-}
+    transition: all .35s;}
 
-/* Information Section ------------------------------- */
-.info .list {
+.whatsup .list a:hover{
+    border-bottom: 2px solid var(--red);
+    color: var(--red);}
+
+/* SECTION | Information ------------------------------ */
+.info .list{
     grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-}
-.info .list .item img {
+    align-items: center;}
+
+.info .list .item img{
     width: 100%;
     display: block;
-    border-radius: 6px;;
-}
-.info .item p {
-    margin: 0.5rem 0;
-}
+    border-radius: 6px;;}
 
-/* Footer ------------------------------- */
-.footer {
+.info .item p{
+    margin: 0.5rem 0;}
+    
+/* FOOTER ------------------------------ */
+.footer{
     display: flex;
     flex-direction: column;
     height: 260px;
@@ -444,10 +491,11 @@ section{
     justify-content: space-evenly;
     align-items: center;}
 
-.footer h3 {
-    margin: 0;}
+.footer h3{
+    margin: 0;
+    color: var(--brown)}
 
-.newlatter {
+.newlatter{
     display: flex;
     justify-content: space-between;
     padding: 4px 10px;
@@ -457,12 +505,12 @@ section{
     font-size: 90%;
     background: white;}
 
-.newlatter input {
+.newlatter input{
     font-size: 100%;
     border: none;
     outline: none;}
 
-/* Smaller Screens ------------------------------- */
+/* SMALL SCREENS ------------------------------ */
 @media (max-width: 1380px){
     .nav{
         padding: 18px 2%;
@@ -473,33 +521,30 @@ section{
         transition: .3s;}
 
     .din .list{
-        grid-template-columns: repeat(2, 1fr 2fr);}
+        grid-template-columns: repeat(2, 1fr 2fr);}}
 
-}
 @media (max-width: 1170px){
-    .logo {
-        flex: 0;
-    }
-    .logo span {
+    .logo{
+        flex: 0;}
+        
+    .logo span{
         display: none;
-        transition: 0.3s;
-    }
-}
+        transition: 0.3s;}}
+
 @media (max-width: 1120px){
     .nav{
-        padding: 10px 2%;
-    }
+        padding: 10px 2%;}
+        
     .din .list{
-        grid-template-columns: 1fr 2fr;
-    }
-}
-@media (max-width: 920px) {
-    .logo {
-        flex: 20%;
-    }
-    .logo span {
-        display: block;
-    }
+        grid-template-columns: 1fr 2fr;}}
+
+@media (max-width: 920px){
+    .logo{
+        flex: 20%;}
+        
+    .logo span{
+        display: block;}
+        
     .navlist{        
         position: fixed;
         flex-direction: column;
@@ -508,67 +553,56 @@ section{
         left: 0;
         width: 100%;
         background:rgba(0,0,0,0.7);
-        transition: all 0.3s;
-    }
-    .navlist.active {
-        top: 0;
-    }
-    .navlist a {
+        transition: all 0.3s;}
+        
+    .navlist.active{
+        top: 0;}
+        
+    .navlist a{
         flex: 100%;
         padding: 10px;
-        margin: 10px 0;
-    }
-    .nav.sticky .navlist a {
-        color: var(--lightgrey);
-    }
-    .nav.sticky .navlist a:hover {
-        color: var(--lightpink);
-    }
-    .icon.fa-bars {
-        display: block;
-    }
-}
+        margin: 10px 0;}
+        
+    .nav.sticky .navlist a{
+        color: var(--lightgrey);}
+        
+    .nav.sticky .navlist a:hover{
+        color: var(--lightpink);}
+        
+    .icon.fa-bars{
+        display: block;}}
+
 @media (max-width: 770px){
-    h2 {font-size: 2.8rem;}
-    h3 {font-size: 1.6rem;}
-    h4 {font-size: 1.2rem;}
-    .brief {grid-template-columns: 1fr !important;}
-    .even img {order: 1;}
-    .even div {order: 2;}
-    .info .list {grid-template-columns: 1fr !important;}
-    .info .list div:nth-child(1) {order: 2;}
-    .info .list div:nth-child(2) {order: 1;}
-    .info .list div:nth-child(3) {order: 3;}
-    .info .list div:nth-child(4) {order: 4;}
-}
+    h2{font-size: 2.8rem;}
+    h3{font-size: 1.6rem;}
+    h4{font-size: 1.2rem;}
+    .brief{grid-template-columns: 1fr !important;}
+    .even img{order: 1;}
+    .even div{order: 2;}
+    .info .list{grid-template-columns: 1fr !important;}
+    .info .list div:nth-child(1){order: 2;}
+    .info .list div:nth-child(2){order: 1;}
+    .info .list div:nth-child(3){order: 3;}
+    .info .list div:nth-child(4){order: 4;}}
+
 @media (max-width: 750px){
     :root{
-        --h3-font: 1.6rem;
-        --p-font: 0.9rem;
-    }
-}
+        --p-font: 0.9rem;}}
+
 @media (max-width: 630px){
-    h1 {font-size: 3rem;}
+    h1{
+        font-size: 3rem;}
     .nav{
-        height: 80px
-    }
+        height: 80px}
     .list{
         align-items: center;
-        grid-gap: 1rem;
-    }
-    .exp .list {
-        grid-template-columns: repeat(auto-fit, minmax(160px, auto));
-    }
-    .din .list .item.text img{
-        display: none;
-    }
+        grid-gap: 1rem;}
+    .exp .list, .char .list{
+        grid-template-columns: repeat(auto-fit, minmax(160px, auto));}
     table tr td{
-        padding: 0;
-    }
-}
+        padding: 0 4px 0 0;}}
 @media (max-width: 390px){
-    h1 {font-size: 2rem;}
-    .footer {
-        grid-gap: 1rem;
-    }
-}
+    h1{
+        font-size: 2rem;}
+    .footer{
+        grid-gap: 1rem;}}

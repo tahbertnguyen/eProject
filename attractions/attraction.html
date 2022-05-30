@@ -26,7 +26,7 @@
             <a href="../index.html#whatsup">WHATS UP</a>
             <a href="../index.html#info">PARK INFORMATION</a>
             <a href="../index.html#info">BUSINESS OPPORTUNITIES</a>
-            <i id="closeIcon" class="icon fa-solid fa-circle-xmark"></i>
+            <i id="closeMenu" class="icon fa-solid fa-circle-xmark"></i>
         </div>
         <i id="menuIcon" class="icon fa-solid fa-bars" onclick="showMenu()"></i>
     </div>
@@ -46,7 +46,14 @@
         <!-- Attractions Section -->
         <section class="details">
             <div class="details-text">
-                <h3>Be careful for the boyish tricks of Max and Moritz</h3>
+                <div class="details-head">
+                    <h3>Max and Moritz</h3>
+                    <i class="icon fa-solid fa-map-location-dot"></i>
+                    <div id="mapLayer" class="map-layer">
+                        <img class="map-img" src="../img/map.gif" alt="map">
+                        <i class="icon closeMap fa-solid fa-circle-xmark"></i>
+                    </div>
+                </div>
                 <p>
                     On the Max & Moritz double roller coaster, 
                     you and the whole family experience an exciting and crazy ride full of tricks. 
@@ -56,11 +63,26 @@
                 </p>
             </div>
             <div class="details-gallery">
-                <img class="img1" src="img/a.jpg" alt="">
-                <img class="img2" src="img/b.jpg" alt="">
-                <img class="img3" src="img/c.jpg" alt="">
-                <img class="img4" src="img/d.jpg" alt="">
-                <img class="img5" src="img/e.jpg" alt="">
+                <div class="slice-container">
+                    <img class="slice" src="../img/Efteling-Eagle.jpg">
+                    <img class="slice" src="../img/efteling-park-netherlands_l.jpeg">
+                    <img class="slice" src="../img/img_mountains_wide.jpg">
+                    <img class="slice" src="../img/img_lights_wide.jpg">
+                    <img class="slice" src="../img/img_nature_wide.jpg">
+                    <img class="slice" src="../img/img_snow_wide.jpg">
+                    <div class="move">
+                        <a class="prev" onclick="clickPrevNext(-1)">❮</a>
+                        <a class="next" onclick="clickPrevNext(1)">❯</a>
+                    </div>
+                </div>
+                <div class="thumb-container">
+                    <img class="thumb" src="../img/img_woods.jpg" onclick="clickThumbnail(1)" alt="The Woods">
+                    <img class="thumb" src="../img/img_5terre.jpg" onclick="clickThumbnail(2)" alt="Cinque Terre">
+                    <img class="thumb" src="../img/img_mountains.jpg" onclick="clickThumbnail(3)" alt="Mountains and fjords">
+                    <img class="thumb" src="../img/img_lights.jpg" onclick="clickThumbnail(4)" alt="Northern Lights">
+                    <img class="thumb" src="../img/img_nature.jpg" onclick="clickThumbnail(5)" alt="Nature and sunrise">
+                    <img class="thumb" src="../img/img_snow.jpg" onclick="clickThumbnail(6)" alt="Snowy Mountains">
+                </div>
             </div>
         </section>
     </div>
@@ -85,5 +107,7 @@
     <!-- the scripts -->
     <script src="../js/menu.js"></script>
     <script src="../js/sticky.js"></script>
+    <script src="../js/slice.js"></script>
+    <script src="../js/map.js"></script>
 </body>
 </html>
