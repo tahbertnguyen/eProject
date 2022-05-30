@@ -25,9 +25,9 @@
             <a href="#whatsup">WHATS UP</a>
             <a href="#info">PARK INFORMATION</a>
             <a href="#info">BUSINESS OPPORTUNITIES</a>
-            <i id="closeIcon" class="fa-solid fa-circle-xmark fa-3x"></i>
+            <i id="closeIcon" class="icon fa-solid fa-circle-xmark"></i>
         </div>
-        <i id="menuIcon" class="fa-solid fa-bars fa-2x" onclick="showMenu()"></i>
+        <i id="menuIcon" class="icon fa-solid fa-bars" onclick="showMenu()"></i>
     </div>
 
     <!-- Wrapper All Sections -->
@@ -38,12 +38,7 @@
             <div class="home-text">
                 <h1 class="text-shadow">WELCOME TO THE FUN ZONE</h1>
                 <p class="text-shadow">The Most Entertaining Theme Park</p>
-                <button id="ticketBtn" class="btn">Reserve</button>
-            </div>
-
-            <!-- Tickets Popup -->
-            <div id="ticketPopup" class="ticketPopup">
-                
+                <a href="#subcribe" class="btn ticket">Reserve</a>
             </div>
         </section>
     
@@ -277,7 +272,7 @@
                 </a>
             </div>
 
-            <button id="moreExp" onclick="moreExp()">See More</button>
+            <button id="moreExp" class="btn more" onclick="moreExp()">See More</button>
         </section>
 
         <!-- Dinner Section -->
@@ -606,7 +601,7 @@
                 </div>
             </div>
 
-            <button id="moreDin" onclick="moreDin()">See More</button>
+            <button id="moreDin" class="btn more" onclick="moreDin()">See More</button>
         </section>
     
         <!-- Characters Section -->
@@ -789,7 +784,7 @@
                 </a>
             </div>
 
-            <button id="moreChar" onclick="moreChar()">See More</button>
+            <button id="moreChar" class="btn more" onclick="moreChar()">See More</button>
         </section>
     
         <!-- Whatsup Section -->
@@ -893,7 +888,7 @@
                 </div>
             </div>
 
-            <button id="moreWhatsup" onclick="moreWhatsup()">See More</button>
+            <button id="moreWhatsup" class="btn more" onclick="moreWhatsup()">See More</button>
         </section>
 
         <!--Contact Section-->
@@ -903,13 +898,15 @@
                 <div class="item">
                     <h3>Park Infomation</h3>
                     <p>
-                        Address: No 1 Pasteur Street, District 3, HCM City.<br>
+                        Address: Europalaan 1, 5171 KW Kaatsheuvel, Netherlands<br>
                         Email: <a href="mailto:someone@example.com">thefunzone@gmail.com</a><br>
                         Phone: 0888810000</p>
                 </div>
 
                 <div class="item">
-                    <img src="img/map.gif" alt="google map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1964.7961845305636!2d5.04886028225515!3d51.65089942506293!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c696a9aff44307%3A0x443bdab1ed5cb89a!2sEfteling!5e0!3m2!1sen!2s!4v1653653238977!5m2!1sen!2s" 
+                        width="100%" height="260" style="border:0; border-radius: 6px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
                 </div>
 
                 <div class="item">
@@ -938,17 +935,20 @@
         <h3>subcribe for more</h3>
         <div class="newlatter">
             <input type="email" placeholder="Enter Your Email">
-            <a href="#subcribe" class="btn">Subcribe</a>
+            <a href="#subcribe" class="btn subcribe">Subcribe</a>
         </div>
-        <div class="icon">
-            <a href="#icon"><i class="fa-brands fa-3x fa-facebook-square"></i></i></a>
-            <a href="#icon"><i class="fa-brands fa-3x fa-instagram-square"></i></a>
-            <a href="#icon"><i class="fa-brands fa-3x fa-whatsapp-square"></i></a>
+        <div>
+            <a href="#icon"><i class="icon fa-brands fa-facebook-square"></i></i></a>
+            <a href="#icon"><i class="icon fa-brands fa-instagram-square"></i></a>
+            <a href="#icon"><i class="icon fa-brands fa-whatsapp-square"></i></a>
         </div>
     </div>
 
     <!-- the overlay for Menu -->
     <div id="overlay"></div>
+
+    <!-- Tickets Popup -->
+    <div id="popup-ticket" class="popup-ticket"></div>
 
     <!-- the scripts -->
     <script src="js/menu.js"></script>
