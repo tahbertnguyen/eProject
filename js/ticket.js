@@ -1,0 +1,9 @@
+$("#reserve").click(function(){
+    $("#menuSelect").toggle("slow","swing");
+  });
+$("#buyNow").click(function(){
+    alert("One");
+  });
+  $("#buyNow1").click(function(){
+    $("#menuSelect").hide();
+  });
