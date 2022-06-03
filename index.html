@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,6 +11,7 @@
     <link rel="icon" href="./img/logomini.webp">
     <title>The Fun Zone</title>
 </head>
+
 <body>
     <div id="gap" class="gap"></div>
 
@@ -33,17 +35,17 @@
     </div>
 
     <!-- Wrapper All Sections -->
-    <div  class="wrapper">
+    <div class="wrapper">
         <!-- Home Section -->
         <section id="home" class="home">
             <div class="home-layer"></div>
             <div class="home-text">
                 <h1 class="text-shadow">WELCOME TO THE FUN ZONE</h1>
                 <p class="text-shadow">The Most Entertaining Theme Park</p>
-                <a href="#subcribe" class="btn ticket">Reserve</a>
+                <button class="btn ticket" id="reserve">Reserve</button>
             </div>
         </section>
-    
+
         <!-- Experience Section -->
         <section id="exp" class="exp">
             <div class="brief odd">
@@ -52,7 +54,7 @@
                 <div class="brief-text">
                     <h2>Experience</h2>
                     <p>
-                        I can provide clean code and pixel perfect design. 
+                        I can provide clean code and pixel perfect design.
                         I also make the website more and more interactive
                         with web animations. I also make the website more and more interactive with web
                         animations. A responsive design makes your website accessible to
@@ -60,7 +62,7 @@
                     </p>
                 </div>
             </div>
-            
+
             <div class="ready">
                 <h3>Ready for all attractions?</h3>
             </div>
@@ -289,7 +291,7 @@
                 </div>
                 <img src="img/din.gif" alt="dinner">
             </div>
-            
+
             <div class="ready">
                 <h3>Check out our restaurants</h3>
             </div>
@@ -688,7 +690,7 @@
 
             <button id="moreDin" class="btn more" onclick="moreDin()">See More</button>
         </section>
-    
+
         <!-- Characters Section -->
         <section id="char" class="char">
             <div class="brief odd">
@@ -703,7 +705,7 @@
                     </p>
                 </div>
             </div>
-            
+
             <div class="ready">
                 <h3>Want to play with me?</h3>
             </div>
@@ -871,7 +873,7 @@
 
             <button id="moreChar" class="btn more" onclick="moreChar()">See More</button>
         </section>
-    
+
         <!-- Whatsup Section -->
         <section id="whatsup" class="whatsup bg-lightgrey">
             <div class="brief even">
@@ -886,7 +888,7 @@
                 </div>
                 <img src="img/whatsup.gif" alt="show-and-entertainment">
             </div>
-            
+
             <div class="ready">
                 <h3>Shows and Entertainment</h3>
             </div>
@@ -898,7 +900,7 @@
                     <h4>Park show: Raveleijn</h4>
                     <a href="whatsup/whatsup.html">Read More</a>
                 </div>
-                
+
                 <div class="item">
                     <img src="img/event.gif">
                     <p>20 Apr 2022</p>
@@ -989,8 +991,10 @@
                 </div>
 
                 <div class="item">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1964.7961845305636!2d5.04886028225515!3d51.65089942506293!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c696a9aff44307%3A0x443bdab1ed5cb89a!2sEfteling!5e0!3m2!1sen!2s!4v1653653238977!5m2!1sen!2s" 
-                        width="100%" height="260" style="border:0; border-radius: 6px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1964.7961845305636!2d5.04886028225515!3d51.65089942506293!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c696a9aff44307%3A0x443bdab1ed5cb89a!2sEfteling!5e0!3m2!1sen!2s!4v1653653238977!5m2!1sen!2s"
+                        width="100%" height="260" style="border:0; border-radius: 6px;" allowfullscreen=""
+                        loading="lazy" referrerpolicy="no-referrer-when-downgrade">
                     </iframe>
                 </div>
 
@@ -1001,7 +1005,7 @@
                 <div class="item">
                     <h3>Business Opportunities</h3>
                     <p>
-                        Do you want to held an meeting or event in the Fun Zone? 
+                        Do you want to held an meeting or event in the Fun Zone?
                         Or do you consider organising a business day out to our theme park?
                     </p>
                     <p>
@@ -1013,6 +1017,52 @@
                 </div>
             </div>
         </section>
+
+
+        <div class="product" id="menuSelect" >
+            <div class="goldpass-tile">
+                <img src="./img/whatsup.gif" alt="goldpass">
+                <div class="price">Ticket</div>
+
+                <div class="price-text">You can choose to book tickets here !</div>
+
+                <div class="pass">
+                    <table class="features">
+                        <tr>
+                            <td class="feature">Select : </td>
+                            <td><select name="human" id="human">
+                                    <option value="Child">Child</option>
+                                    <option value="young">Young</option>
+                                    <option value="both">Both</option>
+                                </select></td>
+                            
+                        </tr>
+                        <tr>
+                            <td class="feature">Amount :</td>
+                            <td> <input type="number" value="1" style="text-align:center" min="0"></td>  
+                            
+                        </tr>
+                        <tr>  
+                            <td class="feature">Number of days :</td>
+                            <td class="feature"><input type="number" value="1" style="text-align:center" min="0"></td>    
+                            
+                        </tr>
+                        <tr>
+                            <td class="feature">Into money :</td>
+                            <td class="feature"></td>
+                        </tr>
+                        <tr>
+                            <td style="text-align:center"><button id="buyNow" class="buy-pass">Buy
+                                    now</button>
+                            </td>
+                            <td style="text-align:center"><button id="buyNow1" class="buy-pass">X
+                                </button></td>
+                        </tr>
+
+                    </table>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!--Footer Section-->
@@ -1041,5 +1091,7 @@
     <script src="js/sticky.js"></script>
     <script src="js/more.js"></script>
     <script src="js/map.js"></script>
+    <script src="js/ticket.js"></script>
 </body>
+
 </html>
