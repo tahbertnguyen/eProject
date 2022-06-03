@@ -565,6 +565,10 @@ section {
     color: #4D3928;
 }
 
+.add-to-cart{
+    float: right;
+}
+
 
 /* SECTION | Whatsup ------------------------------ */
 .whatsup .list {
@@ -637,6 +641,8 @@ section {
 .info .item p {
     margin: 0.5rem 0;
 }
+
+
 
 
 /*css cua chau anh */
