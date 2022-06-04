@@ -8,7 +8,6 @@ $(document).ready(function () {
   $("#buyNow1").click(function () {
     $("#menuSelect").hide();
   });
-<<<<<<< HEAD
   $("#young").select(function () {
     alert("Handler for .select() called.");
   });
@@ -49,5 +48,3 @@ function changeSl() {
 
 
 
-=======
->>>>>>> 22f852df8c02b6e26f63e3fe4182320d77aca604
