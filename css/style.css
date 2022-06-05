@@ -668,10 +668,6 @@ body {
     margin-right: auto;
     width: 240px;
 }
-
-img {
-    width: 100%;
-}
 .buy-pass {
     cursor: pointer;
     border: solid red;
