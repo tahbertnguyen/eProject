@@ -45,7 +45,7 @@
             <div class="home-text">
                 <h1 class="text-shadow">WELCOME TO THE FUN ZONE</h1>
                 <p class="text-shadow">The Most Entertaining Theme Park</p>
-                <button class="btn ticket" id="reserve">Reserve</button>
+                <button class="btn ticket" id="reserve">Book tickets</button>
             </div>
         </section>
 
@@ -320,6 +320,8 @@
                             <td>Vegetarian</td>
                         </tr>
                     </table>
+                    <div class="add-to-cart btn btn-primary addRes"
+                    >Add to cart</div>
                 </div>
 
                 <div class="item img">
@@ -342,6 +344,8 @@
                             <td>Vegetarian</td>
                         </tr>
                     </table>
+                    <div class="add-to-cart btn btn-primary addRes"
+                    >Add to cart</div>
                 </div>
 
                 <div class="item img">
@@ -365,6 +369,8 @@
                             <td>Vegetarian</td>
                         </tr>
                     </table>
+                    <div class="add-to-cart btn btn-primary addRes"
+                    >Add to cart</div>
                 </div>
 
                 <div class="item img">
@@ -388,6 +394,8 @@
                             <td>Vegetarian</td>
                         </tr>
                     </table>
+                    <div class="add-to-cart btn btn-primary addRes"
+                    >Add to cart</div>
                 </div>
 
                 <!-- See more or less start from here -->
@@ -412,6 +420,8 @@
                             <td>Vegetarian</td>
                         </tr>
                     </table>
+                    <div class="add-to-cart btn btn-primary addRes"
+                    >Add to cart</div>
                 </div>
 
                 <div class="item moreDin showOrHide img">
@@ -435,6 +445,8 @@
                             <td>Vegetarian</td>
                         </tr>
                     </table>
+                    <div class="add-to-cart btn btn-primary addRes"
+                    >Add to cart</div>
                 </div>
 
                 <div class="item moreDin showOrHide img">
@@ -458,6 +470,8 @@
                             <td>Vegetarian</td>
                         </tr>
                     </table>
+                    <div class="add-to-cart btn btn-primary addRes"
+                    >Add to cart</div>
                 </div>
 
                 <div class="item moreDin showOrHide img">
@@ -481,6 +495,8 @@
                             <td>Vegetarian</td>
                         </tr>
                     </table>
+                    <div class="add-to-cart btn btn-primary addRes"
+                    >Add to cart</div>
                 </div>
 
                 <div class="item moreDin showOrHide img">
@@ -504,6 +520,8 @@
                             <td>Vegetarian</td>
                         </tr>
                     </table>
+                    <div class="add-to-cart btn btn-primary addRes"
+                    >Add to cart</div>
                 </div>
 
                 <div class="item moreDin showOrHide img">
@@ -527,6 +545,8 @@
                             <td>Vegetarian</td>
                         </tr>
                     </table>
+                    <div class="add-to-cart btn btn-primary addRes"
+                    >Add to cart</div>
                 </div>
 
                 <div class="item moreDin showOrHide img">
@@ -550,6 +570,8 @@
                             <td>Vegetarian</td>
                         </tr>
                     </table>
+                    <div class="add-to-cart btn btn-primary addRes"
+                    >Add to cart</div>
                 </div>
 
                 <div class="item moreDin showOrHide img">
@@ -573,6 +595,8 @@
                             <td>Vegetarian</td>
                         </tr>
                     </table>
+                    <div class="add-to-cart btn btn-primary addRes"
+                    >Add to cart</div>
                 </div>
 
                 <div class="item moreDin showOrHide img">
@@ -596,6 +620,8 @@
                             <td>Vegetarian</td>
                         </tr>
                     </table>
+                    <div class="add-to-cart btn btn-primary addRes"
+                    >Add to cart</div>
                 </div>
 
                 <div class="item moreDin showOrHide img">
@@ -619,6 +645,8 @@
                             <td>Vegetarian</td>
                         </tr>
                     </table>
+                    <div class="add-to-cart btn btn-primary addRes"
+                    >Add to cart</div>
                 </div>
 
                 <div class="item moreDin showOrHide img">
@@ -642,6 +670,8 @@
                             <td>Vegetarian</td>
                         </tr>
                     </table>
+                    <div class="add-to-cart btn btn-primary addRes"
+                    >Add to cart</div>
                 </div>
 
                 <div class="item moreDin showOrHide img">
@@ -665,6 +695,8 @@
                             <td>Vegetarian</td>
                         </tr>
                     </table>
+                    <div class="add-to-cart btn btn-primary addRes"
+                    >Add to cart</div>
                 </div>
 
                 <div class="item moreDin showOrHide img">
@@ -688,6 +720,8 @@
                             <td>Vegetarian</td>
                         </tr>
                     </table>
+                    <div class="add-to-cart btn btn-primary addRes"
+                    >Add to cart</div>
                 </div>
             </div>
 
@@ -1058,16 +1092,26 @@
                             <td class="feature" id="all"></td>
                         </tr>
                         <tr>
-                            <td style="text-align:center"><button id="buyNow" class="buy-pass">Buy
-                                    now</button>
+                            <td style="text-align:center"><button id="buyNow" class="buy-pass" 
+                                >Buy now</button>
                             </td>
+                            <td style="text-align:center"><button id="buyNow1" class="buy-pass" 
+                            onclick="buyNow1()">x</td>
                         </tr>
                     </table>
                 </div>
             </div>
         </div>
     </div>
-
+    
+    <div id="showSure" class="tb2" >
+        <div id="showSure1"></div>
+        <div><button class="done"  id="hideSure">Done</button></div>
+    </div>
+    <div id="addRes1" class="tb2" >
+        <div id="addRes2"></div>
+        <div><button class="done"id="hideaddRes">Done</button></div>
+    </div>
     <!--Footer Section-->
     <div id="footer" class="footer bg-lightgrey">
         <h3>subcribe for more</h3>

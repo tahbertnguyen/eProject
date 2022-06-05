@@ -11,3 +11,30 @@
     height: 75px;
     width: 75px ;
 }
+.tb2{
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  text-align: center;
+  height: auto;
+  width: 300px;
+  background-color: white;
+  position: fixed;
+  right: 38%;
+  top: 30%;
+  z-index: 1000;
+  display: none;
+  border: solid;
+  border-radius: 10px;
+}
+.done{
+  background-color: rgb(177, 228, 246);
+  height: 40px;
+  width: 80px;
+  padding: 1%;
+  border-radius: 10px;
+  font-weight: bold;
+}
+.done:hover{
+  border-radius: 10px;
+  width: 90px;
+}
