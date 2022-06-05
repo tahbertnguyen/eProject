@@ -11,29 +11,51 @@ $(document).ready(function () {
   $("#young").select(function () {
     alert("Handler for .select() called.");
   });
-});
+});   
+var price = 150;
+var amountDT = 1;
+var dayDT = 1;
+var all = 1;
+document.getElementById("price").innerText = '$' + price;
 
 function changeSl() {
   var dataSl = document.getElementById("human").value;
   if (dataSl == 'Child') {
-    var price = 150;
+     price = 150;
   } else if (dataSl == 'Young') {
-    var price = 200;
+     price = 200;
   } else {
-    var price = 300;
+     price = 300;
   }
   document.getElementById("price").innerText = '$' + price;
+  all = price * amountDT * dayDT;
+  document.getElementById("all").innerText ='$' + all;
+  document.getElementById("intro").innerText ='Total money';
 }
 
   function nbTicket(){
     amountDT = document.getElementById("amount").value;
     dayDT = document.getElementById("day").value;
-    document.getElementById("dayDT").innerText = dayDT;
+    all = price * amountDT * dayDT;
+    document.getElementById("intro").innerText ='Total money';
+    document.getElementById("all").innerText ='$' + all;
   }
 
-  function all(){
-    document.getElementById("all").innerText = 'han';
+  var myButton = document.getElementById("myBtn");
+  window.onscroll = function() {scrollFunction()};
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 
+      || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      myButton.style.display = "none";
+    }
   }
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+  
 
 
 
