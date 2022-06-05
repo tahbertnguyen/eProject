@@ -17,6 +17,10 @@ $(document).ready(function () {
   $("#hideaddRes").click(function () {
     $("#addRes1").hide("slow", "swing");
   });
+  $("#myBk").click(function () {
+    $("#addRes1").hide("slow", "swing");
+    $("#menuSelect").toggle("slow", "swing");
+  });
 });
 var all = 1;
 document.getElementById("addRes2").innerText = 
@@ -71,6 +75,7 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
 
 
 

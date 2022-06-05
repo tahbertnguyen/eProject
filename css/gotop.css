@@ -16,25 +16,25 @@
   font-weight: bold;
   text-align: center;
   height: auto;
-  width: 300px;
+  width: 20%;
   background-color: white;
   position: fixed;
   right: 38%;
-  top: 30%;
+  top: 30%; 
   z-index: 1000;
   display: none;
   border: solid;
   border-radius: 10px;
 }
 .done{
+  margin: 1%;
   background-color: rgb(177, 228, 246);
   height: 40px;
-  width: 80px;
+  width: auto;
   padding: 1%;
   border-radius: 10px;
   font-weight: bold;
 }
 .done:hover{
-  border-radius: 10px;
-  width: 90px;
+  background-color: rgb(140, 219, 247);
 }
