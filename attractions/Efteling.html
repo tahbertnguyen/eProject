@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/details.css">
+    <script src="https://kit.fontawesome.com/c313c8dbc7.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>The Fun Zone</title>
+</head>
+<body>
+    <div id="gap" class="gap"></div>
+
+    <div id="nav" class="nav">
+        <a class="logo" href="../index.html">
+            <img src="../img/logo.png" alt="logo">
+            <span>the fun zone</span>
+        </a>
+        <div id="navlist" class="navlist">
+            <a href="../index.html#home">HOME</a>
+            <a href="../index.html#exp">EXPERIENCE</a>
+            <a href="../index.html#din">LEISURE & DINNING</a>
+            <a href="../index.html#char">PARKS CHARACTERS</a>
+            <a href="../index.html#whatsup">WHATS UP</a>
+            <a href="../index.html#info">PARK INFORMATION</a>
+            <a href="../index.html#info">BUSINESS OPPORTUNITIES</a>
+            <i id="closeMenu" class="icon fa-solid fa-circle-xmark"></i>
+        </div>
+        <i id="menuIcon" class="icon fa-solid fa-bars" onclick="showMenu()"></i>
+    </div>
+
+    <!-- Wrapper All Sections -->
+    <div  class="wrapper">
+        <!-- Home Section -->
+        <section class="home" 
+        style="background: url(./img/archipel-2.jpg) center/ cover">
+            <div class="home-layer"></div>
+            <div class="home-text">
+                <h1 class="text-shadow">Efteling Museum</h1>
+                
+            </div>
+        </section>
+    
+        <!-- Attractions Section -->
+        <section class="details">
+            <div class="details-text">
+                <div class="details-head">
+                    <h3>Max and Moritz</h3>
+                    <i class="icon fa-solid fa-map-location-dot"></i>
+                    <div id="mapLayer" class="map-layer">
+                        <img class="map-img" src="../img/map.gif" alt="map">
+                        <i class="icon closeMap fa-solid fa-circle-xmark"></i>
+                    </div>
+                </div>
+                <p>
+                    On the Max & Moritz double roller coaster, 
+                    you and the whole family experience an exciting and crazy ride full of tricks. 
+                    Escape from the cuckoo clock workshop with Max and Moritz in one of their soapboxes. 
+                    But be careful, you may encounter a little mischief from the boys along the way! 
+                    Which track will you choose, Max or Moritz?
+                </p>
+            </div>
+            <div class="details-gallery">
+                <div class="slice-container">
+                    <img class="slice" src="../img/Efteling-Eagle.jpg">
+                    <img class="slice" src="../img/efteling-park-netherlands_l.jpeg">
+                    <img class="slice" src="../img/img_mountains_wide.jpg">
+                    <img class="slice" src="../img/img_lights_wide.jpg">
+                    <img class="slice" src="../img/img_nature_wide.jpg">
+                    <div class="move">
+                        <a class="prev" onclick="clickPrevNext(-1)">❮</a>
+                        <a class="next" onclick="clickPrevNext(1)">❯</a>
+                    </div>
+                </div>
+                <div class="thumb-container">
+                    <img class="thumb" src="../img/img_woods.jpg" onclick="clickThumbnail(1)" alt="The Woods">
+                    <img class="thumb" src="../img/img_5terre.jpg" onclick="clickThumbnail(2)" alt="Cinque Terre">
+                    <img class="thumb" src="../img/img_mountains.jpg" onclick="clickThumbnail(3)" alt="Mountains and fjords">
+                    <img class="thumb" src="../img/img_lights.jpg" onclick="clickThumbnail(4)" alt="Northern Lights">
+                    <img class="thumb" src="../img/img_nature.jpg" onclick="clickThumbnail(5)" alt="Nature and sunrise">
+                </div>
+            </div>
+        </section>
+    </div>
+<center>text</center>
+    <!--Footer Section-->
+    <div id="footer" class="footer bg-lightgrey">
+        <h3>subcribe for more</h3>
+        <div class="newlatter">
+            <input type="email" placeholder="Enter Your Email">
+            <a href="#subcribe" class="btn subcribe">Subcribe</a>
+        </div>
+        <div>
+            <a href="#icon"><i class="icon fa-brands fa-facebook-square"></i></i></a>
+            <a href="#icon"><i class="icon fa-brands fa-instagram-square"></i></a>
+            <a href="#icon"><i class="icon fa-brands fa-whatsapp-square"></i></a>
+        </div>
+    </div>
+
+    <!-- the overlay for Menu -->
+    <div id="overlay"></div>
+
+    <!-- the scripts -->
+    <script src="../js/menu.js"></script>
+    <script src="../js/sticky.js"></script>
+    <script src="../js/slice.js"></script>
+    <script src="../js/map.js"></script>
+</body>
+</html>

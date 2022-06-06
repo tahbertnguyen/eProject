@@ -21,6 +21,28 @@ $(document).ready(function () {
     $("#addRes1").hide("slow", "swing");
     $("#menuSelect").toggle("slow", "swing");
   });
+
+  $("#myInput").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#attractions a").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  }); 
+
+  $("#myInput1").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#restaurants h4").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+
+  $("#myInput2").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#Characters h4").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+
 });
 var all = 1;
 document.getElementById("addRes2").innerText = 

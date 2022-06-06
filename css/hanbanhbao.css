@@ -23,7 +23,7 @@
   top: 30%; 
   z-index: 1000;
   display: none;
-  border: solid;
+  border: solid 2px;
   border-radius: 10px;
 }
 .done{
@@ -38,3 +38,23 @@
 .done:hover{
   background-color: rgb(140, 219, 247);
 }
+.search{
+  text-align: right;
+  width: 400px;
+  display: inline-block;
+  padding: 4px 10px;
+  font-size: 90%;
+  border: none;
+  border-radius: 6px;
+}
+.myInput{
+  cursor: grab;
+  height: 32px;
+  width: 300px;
+  border: solid 1px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+
+
