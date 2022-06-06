@@ -24,22 +24,22 @@ $(document).ready(function () {
 
   $("#myInput").on("keyup", function() {
     var value = $(this).val().toLowerCase();
-    $("#attractions a").filter(function() {
+    $("#attractions div").filter(function() {
       $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
     });
   }); 
 
   $("#myInput1").on("keyup", function() {
-    var value = $(this).val().toLowerCase();
-    $("#restaurants h4").filter(function() {
-      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    var value1 = $(this).val().toLowerCase();
+    $("#restaurants div").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value1) > -1)
     });
   });
 
   $("#myInput2").on("keyup", function() {
-    var value = $(this).val().toLowerCase();
+    var value2 = $(this).val().toLowerCase();
     $("#Characters h4").filter(function() {
-      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+      $(this).toggle($(this).text().toLowerCase().indexOf(value2) > -1)
     });
   });
 
