@@ -42,7 +42,6 @@ $(document).ready(function () {
       $(this).toggle($(this).text().toLowerCase().indexOf(value2) > -1)
     });
   });
-
 });
 var all = 1;
 document.getElementById("addRes2").innerText = 
@@ -81,6 +80,33 @@ function nbTicket() {
     else {
       document.getElementById("showSure1").innerText = 'Please complete all information !'
     }
+}
+
+//add money
+var end = 0 ;
+var cart = [];
+var count
+
+function test(id, money){
+for(x in cart){
+    if(id == cart[x].id){
+      cart.splice(x,1)
+    }
+  }
+  cart.push({'id': id, 'money': money});
+  showCart(cart);
+  end += all;
+}
+function showCart(cart){
+  $('#idResShow').html(null);
+  $('#priceResShow').html(null);
+  for(i in cart ){
+  $('#idResShow').append(`${cart[i].id} <br> `);
+  $('#priceResShow').append(`$ ${cart[i].money} <br> `);
+}}
+//end add money
+function focusFunction(){
+  document.getElementById("myInput").style.background = "yellow";
 }
 
 
