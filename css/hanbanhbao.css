@@ -11,6 +11,19 @@
     height: 75px;
     width: 75px ;
 }
+.menuSelect {
+  background-color: aqua;
+  height: auto;
+  width: 30%;
+  position: fixed;
+  top: 2%;
+  left: 37%;
+  z-index: 1000;
+  box-shadow: 2px 14px 20px rgb(0 0 0 / 15%);
+  padding: 25px 20px;
+  border-radius: 20px;
+  display: none;
+}
 .tb2{
   font-family: 'Courier New', Courier, monospace;
   font-weight: bold;
@@ -55,6 +68,79 @@
   border-radius: 20px;
   text-align: center;
 }
-
+.btn-menu{
+  cursor: pointer;
+  border: solid red;
+  border-radius: 30px;
+  color: #ffff; 
+  font-size: 10px;
+  font-weight: bold;
+  text-align: center;
+  justify-content: space-between;
+  margin: 2px;
+}
+@media (max-width: 1380px) {
+  .menuSelect {
+    width: 35%;
+    top: 10%;
+    left: 33%;
+    padding: 25px 20px;
+    border-radius: 20px;
+}
+.tb2{
+  height: auto;
+  width: 20%;
+  right: 39%;
+  top: 40%; 
+  border: solid 2px;
+  border-radius: 10px;
+}
+}
+@media (max-width: 1170px) {
+  .menuSelect {
+    width: 50%;
+    top: 10%;
+    left: 28%;
+    padding: 25px 20px;
+    border-radius: 20px;
+}
+.tb2{
+  font-size: 14px;
+  height: auto;
+  width: 25%;
+  right: 35%;
+  top: 40%; 
+  border: solid 2px;
+  border-radius: 10px;
+}
+}
+@media (max-width: 1120px) {
+  .menuSelect {
+    width: 40%;
+    top: 7%;
+    left: 30%;
+    padding: 10px 10px;
+    border-radius: 20px;
+}
+.tb2{
+  font-size: 14px;
+  height: auto;
+  width: 25%;
+  right: 37%;
+  top: 40%; 
+  border: solid 2px;
+  border-radius: 10px;
+}
+}
+@media (max-width: 920px) {
+}
+@media (max-width: 770px) {
+}
+@media (max-width: 750px) {
+}
+@media (max-width: 630px) {
+}
+@media (max-width: 390px) {
+}
 
 

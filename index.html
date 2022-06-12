@@ -12,7 +12,8 @@
     <link rel="stylesheet" href="./css/hanbanhbao.css">
     <title>The Fun Zone</title>
 </head>
-<body>
+
+<body onbeforeunload="return myReload()">
 
     <div id="gap" class="gap"></div>
 
@@ -29,7 +30,6 @@
             <a href="#whatsup">WHATS UP</a>
             <a href="#info">PARK INFORMATION</a>
             <a href="#info">BUSINESS OPPORTUNITIES</a>
-            <a href="#info">TRY</a>
             <i id="closeMenu" class="icon fa-solid fa-circle-xmark"></i>
         </div>
         <i id="menuIcon" class="icon fa-solid fa-bars" onclick="showMenu()"></i>
@@ -43,7 +43,7 @@
             <div class="home-text">
                 <h1 class="text-shadow">WELCOME TO THE FUN ZONE</h1>
                 <p class="text-shadow">The Most Entertaining Theme Park</p>
-                <button class="btn ticket" id="reserve">Book tickets</button><br>   
+                <button class="btn ticket" id="reserve">Book tickets</button><br>
         </section>
 
         <!-- Experience Section -->
@@ -55,267 +55,300 @@
                     <h2>Experience</h2>
                     <p>
                         Are you depressed ? Are you feeling stuffy inside ? Come to our park now.
-                         Coming here, you will feel interesting, refreshing, dispel anxiety 
-                         immediately with our interesting and attractive games.
+                        Coming here, you will feel interesting, refreshing, dispel anxiety
+                        immediately with our interesting and attractive games.
                     </p>
                 </div>
             </div>
 
             <div class="ready">
-                <h3>Ready for all attractions?</h3> 
+                <h3>Ready for all attractions?</h3>
             </div>
 
             <div class="search" style="width : 100%">
-                <input type="text" id="myInput" 
-                placeholder="Search..." class="myInput"></input>
+                <input type="text" id="myInput" placeholder="Search..." class="myInput"></input>
             </div>
 
             <!-- bat dau list Ready for all attractions -->
             <div class="list" id="attractions">
-                
-                <div><a href="attractions/Archipel.html" class="item"> 
-                    <img src="img/archipel.gif" alt="attractions">
-                    <div class="layer">
-                    <h4 class="text-shadow">Archipel</h4>
-                    </div></a></div>
 
-                
+                <div><a href="attractions/Archipel.html" class="item">
+                        <img src="img/archipel.gif" alt="attractions">
+                        <div class="layer">
+                            <h4 class="text-shadow">Archipel</h4>
+                        </div>
+                    </a></div>
+
+
                 <div><a href="attractions/Sirocco.html" class="item">
-                    <img src="img/sirocco.gif" alt="attractions">
-                    <div class="layer">
-                    <h4 class="text-shadow">Sirocco</h4>
-                    </div></a></div>
+                        <img src="img/sirocco.gif" alt="attractions">
+                        <div class="layer">
+                            <h4 class="text-shadow">Sirocco</h4>
+                        </div>
+                    </a></div>
 
                 <div><a href="attractions/Nest.html" class="item">
-                    <img src="img/nest.gif" alt="attractions">
-                    <div class="layer">
-                    <h4 class="text-shadow">Nest</h4>
-                    </div></a></div>
+                        <img src="img/nest.gif" alt="attractions">
+                        <div class="layer">
+                            <h4 class="text-shadow">Nest</h4>
+                        </div>
+                    </a></div>
 
 
                 <div><a href="attractions/Max.html" class="item">
-                    <img src="img/max-and-moritz.gif" alt="attractions">
-                    <div class="layer">
-                    <h4 class="text-shadow">Max & Moritz</h4>
-                    </div></a></div>
+                        <img src="img/max-and-moritz.gif" alt="attractions">
+                        <div class="layer">
+                            <h4 class="text-shadow">Max & Moritz</h4>
+                        </div>
+                    </a></div>
 
 
                 <div><a href="attractions/Fabula.html" class="item">
-                    <img src="img/fabula.gif" alt="attractions">
-                    <div class="layer">
-                    <h4 class="text-shadow">Fabula</h4>
-                    </div></a></div>
+                        <img src="img/fabula.gif" alt="attractions">
+                        <div class="layer">
+                            <h4 class="text-shadow">Fabula</h4>
+                        </div>
+                    </a></div>
 
 
                 <div><a href="attractions/Symbolica.html" class="item">
-                    <img src="img/symbolica.gif" alt="attractions">
-                    <div class="layer">
-                    <h4 class="text-shadow">Symbolica</h4>
-                    </div></a></div>
+                        <img src="img/symbolica.gif" alt="attractions">
+                        <div class="layer">
+                            <h4 class="text-shadow">Symbolica</h4>
+                        </div>
+                    </a></div>
 
                 <!-- Start see more or see less from here -->
 
 
                 <div><a href="attractions/Joris.html" class="item moreExp showOrHide">
-                    <img src="img/joris-en-de-draak.gif" alt="attractions">
-                    <div class="layer">
-                    <h4 class="text-shadow">Joris en de Draak</h4>
-                    </div></a></div>
+                        <img src="img/joris-en-de-draak.gif" alt="attractions">
+                        <div class="layer">
+                            <h4 class="text-shadow">Joris en de Draak</h4>
+                        </div>
+                    </a></div>
 
 
                 <div><a href="attractions/Baron.html" class="item moreExp showOrHide">
-                    <img src="img/baron-1898.gif" alt="attractions">
-                    <div class="layer">
-                    <h4 class="text-shadow">Baron 1898</h4>
-                    </div></a></div>
+                        <img src="img/baron-1898.gif" alt="attractions">
+                        <div class="layer">
+                            <h4 class="text-shadow">Baron 1898</h4>
+                        </div>
+                    </a></div>
 
 
                 <div><a href="attractions/Droomvlucht.html" class="item moreExp showOrHide">
-                    <img src="img/droomvlucht.gif" alt="attractions">
-                    <div class="layer">
-                    <h4 class="text-shadow">Droomvlucht</h4>
-                    </div></a></div>
+                        <img src="img/droomvlucht.gif" alt="attractions">
+                        <div class="layer">
+                            <h4 class="text-shadow">Droomvlucht</h4>
+                        </div>
+                    </a></div>
 
 
                 <div><a href="attractions/Fairytale.html" class="item moreExp showOrHide">
-                    <img src="img/FairytaleForest.gif" alt="attractions">
-                    <div class="layer">
-                    <h4 class="text-shadow">Fairytale Forest</h4>
-                    </div></a></div>
+                        <img src="img/FairytaleForest.gif" alt="attractions">
+                        <div class="layer">
+                            <h4 class="text-shadow">Fairytale Forest</h4>
+                        </div>
+                    </a></div>
 
 
                 <div><a href="attractions/De.html" class="item moreExp showOrHide">
-                    <img src="img/de-vliegende-hollander.gif" alt="attractions">
-                    <div class="layer">
-                    <h4 class="text-shadow">De Vliegende Hollander</h4>
-                    </div></a></div>
+                        <img src="img/de-vliegende-hollander.gif" alt="attractions">
+                        <div class="layer">
+                            <h4 class="text-shadow">De Vliegende Hollander</h4>
+                        </div>
+                    </a></div>
 
 
                 <div><a href="attractions/Piraña.html" class="item moreExp showOrHide">
-                    <img src="img/piraña.gif" alt="attractions">
-                    <div class="layer">
-                    <h4 class="text-shadow">Piraña</h4>
-                    </div></a></div>
+                        <img src="img/piraña.gif" alt="attractions">
+                        <div class="layer">
+                            <h4 class="text-shadow">Piraña</h4>
+                        </div>
+                    </a></div>
 
 
                 <div><a href="attractions/Python.html" class="item moreExp showOrHide">
-                    <img src="img/python.gif" alt="attractions">
-                    <div class="layer">
-                    <h4 class="text-shadow">Python</h4>
-                    </div></a></div>
+                        <img src="img/python.gif" alt="attractions">
+                        <div class="layer">
+                            <h4 class="text-shadow">Python</h4>
+                        </div>
+                    </a></div>
 
 
                 <div><a href="attractions/Carnaval.html" class="item moreExp showOrHide">
-                    <img src="img/carnaval-festival.gif" alt="attractions">
-                    <div class="layer">
-                    <h4 class="text-shadow">Carnaval Festival</h4>
-                    </div></a></div>
+                        <img src="img/carnaval-festival.gif" alt="attractions">
+                        <div class="layer">
+                            <h4 class="text-shadow">Carnaval Festival</h4>
+                        </div>
+                    </a></div>
 
 
                 <div><a href="attractions/Stoomcarrousel.html" class="item moreExp showOrHide">
-                    <img src="img/stoomcarrousel.gif" alt="attractions">
-                    <div class="layer">
-                    <h4 class="text-shadow">Stoomcarrousel</h4>
-                    </div></a></div>
+                        <img src="img/stoomcarrousel.gif" alt="attractions">
+                        <div class="layer">
+                            <h4 class="text-shadow">Stoomcarrousel</h4>
+                        </div>
+                    </a></div>
 
 
                 <div><a href="attractions/Fata.html" class="item moreExp showOrHide">
-                    <img src="img/fata-morgana.gif" alt="attractions">
-                    <div class="layer">
-                    <h4 class="text-shadow">Fata Morgana</h4>
-                    </div></a></div>
+                        <img src="img/fata-morgana.gif" alt="attractions">
+                        <div class="layer">
+                            <h4 class="text-shadow">Fata Morgana</h4>
+                        </div>
+                    </a></div>
 
 
                 <div><a href="attractions/Kleuterhof.html" class="item moreExp showOrHide">
-                    <img src="img/kleuterhof.gif" alt="attractions">
-                    <div class="layer">
-                    <h4 class="text-shadow">Kleuterhof</h4>
-                    </div></a></div>
+                        <img src="img/kleuterhof.gif" alt="attractions">
+                        <div class="layer">
+                            <h4 class="text-shadow">Kleuterhof</h4>
+                        </div>
+                    </a></div>
 
 
                 <div><a href="attractions/Vogel.html" class="item moreExp showOrHide">
-                    <img src="img/VogelRok.gif" alt="attractions">
-                    <div class="layer">
-                        <h4 class="text-shadow">Vogel Rok</h4>
-                    </div></a></div>
+                        <img src="img/VogelRok.gif" alt="attractions">
+                        <div class="layer">
+                            <h4 class="text-shadow">Vogel Rok</h4>
+                        </div>
+                    </a></div>
 
 
                 <div><a href="attractions/Villa.html" class="item moreExp showOrHide">
-                    <img src="img/VillaVolta.gif" alt="attractions">
-                    <div class="layer">
-                        <h4 class="text-shadow">Villa Volta</h4>
-                    </div></a></div>
+                        <img src="img/VillaVolta.gif" alt="attractions">
+                        <div class="layer">
+                            <h4 class="text-shadow">Villa Volta</h4>
+                        </div>
+                    </a></div>
 
 
                 <div><a href="attractions/Anton.html" class="item moreExp showOrHide">
-                    <img src="img/AntonPieck Plein.gif" alt="attractions">
-                    <div class="layer">
-                        <h4 class="text-shadow">Anton Pieck Plein</h4>
-                    </div></a></div>
+                        <img src="img/AntonPieck Plein.gif" alt="attractions">
+                        <div class="layer">
+                            <h4 class="text-shadow">Anton Pieck Plein</h4>
+                        </div>
+                    </a></div>
 
 
                 <div><a href="attractions/Halve.html" class="item moreExp showOrHide">
-                    <img src="img/HalveMaen.gif" alt="attractions">
-                    <div class="layer">
-                        <h4 class="text-shadow">Halve Maen</h4>
-                    </div></a></div>
+                        <img src="img/HalveMaen.gif" alt="attractions">
+                        <div class="layer">
+                            <h4 class="text-shadow">Halve Maen</h4>
+                        </div>
+                    </a></div>
 
 
                 <div><a href="attractions/Oude.html" class="item moreExp showOrHide">
-                    <img src="img/DeOudeTufferbaan.gif" alt="attractions">
-                    <div class="layer">
-                        <h4 class="text-shadow">De Oude Tufferbaan</h4>
-                    </div></a></div>
+                        <img src="img/DeOudeTufferbaan.gif" alt="attractions">
+                        <div class="layer">
+                            <h4 class="text-shadow">De Oude Tufferbaan</h4>
+                        </div>
+                    </a></div>
 
 
                 <div><a href="attractions/Volk.html" class="item moreExp showOrHide">
-                    <img src="img/VolkVanLaaf.gif" alt="attractions">
-                    <div class="layer">
-                        <h4 class="text-shadow">Volk Van Laaf</h4>
-                    </div></a></div>
+                        <img src="img/VolkVanLaaf.gif" alt="attractions">
+                        <div class="layer">
+                            <h4 class="text-shadow">Volk Van Laaf</h4>
+                        </div>
+                    </a></div>
 
 
                 <div><a href="attractions/Monorail.html" class="item moreExp showOrHide">
-                    <img src="img/Monorail.gif" alt="attractions">
-                    <div class="layer">
-                        <h4 class="text-shadow">Monorail</h4>
-                    </div></a></div>
+                        <img src="img/Monorail.gif" alt="attractions">
+                        <div class="layer">
+                            <h4 class="text-shadow">Monorail</h4>
+                        </div>
+                    </a></div>
 
 
                 <div><a href="attractions/Pagode.html" class="item moreExp showOrHide">
-                    <img src="img/Pagode.gif" alt="attractions">
-                    <div class="layer">
-                        <h4 class="text-shadow">Pagode</h4>
-                    </div></a></div>
+                        <img src="img/Pagode.gif" alt="attractions">
+                        <div class="layer">
+                            <h4 class="text-shadow">Pagode</h4>
+                        </div>
+                    </a></div>
 
 
                 <div><a href="attractions/Kindervreugd.html" class="item moreExp showOrHide">
-                    <img src="img/Kindervreugd.gif" alt="attractions">
-                    <div class="layer">
-                        <h4 class="text-shadow">Kindervreugd</h4>
-                    </div></a></div>
+                        <img src="img/Kindervreugd.gif" alt="attractions">
+                        <div class="layer">
+                            <h4 class="text-shadow">Kindervreugd</h4>
+                        </div>
+                    </a></div>
 
 
                 <div><a href="attractions/Kinderspoor.html" class="item moreExp showOrHide">
-                    <img src="img/Kinderspoor.gif" alt="attractions">
-                    <div class="layer">
-                        <h4 class="text-shadow">Kinderspoor</h4>
-                    </div></a></div>
+                        <img src="img/Kinderspoor.gif" alt="attractions">
+                        <div class="layer">
+                            <h4 class="text-shadow">Kinderspoor</h4>
+                        </div>
+                    </a></div>
 
 
                 <div><a href="attractions/Gondoletta.html" class="item moreExp showOrHide">
-                    <img src="img/Gondoletta.gif" alt="attractions">
-                    <div class="layer">
-                        <h4 class="text-shadow">Gondoletta</h4>
-                    </div></a></div>
+                        <img src="img/Gondoletta.gif" alt="attractions">
+                        <div class="layer">
+                            <h4 class="text-shadow">Gondoletta</h4>
+                        </div>
+                    </a></div>
 
 
                 <div><a href="attractions/Efteling.html" class="item moreExp showOrHide">
-                    <img src="img/EftelingMuseum.gif" alt="attractions">
-                    <div class="layer">
-                        <h4 class="text-shadow">Efteling Museum</h4>
-                    </div></a></div>
+                        <img src="img/EftelingMuseum.gif" alt="attractions">
+                        <div class="layer">
+                            <h4 class="text-shadow">Efteling Museum</h4>
+                        </div>
+                    </a></div>
 
 
                 <div><a href="attractions/Spookslot.html" class="item moreExp showOrHide">
-                    <img src="img/Spookslot.gif" alt="attractions">
-                    <div class="layer">
-                        <h4 class="text-shadow">Spookslot</h4>
-                    </div></a></div>
+                        <img src="img/Spookslot.gif" alt="attractions">
+                        <div class="layer">
+                            <h4 class="text-shadow">Spookslot</h4>
+                        </div>
+                    </a></div>
 
 
                 <div><a href="attractions/Diorama.html" class="item moreExp showOrHide">
-                    <img src="img/Diorama.gif" alt="attractions">
-                    <div class="layer">
-                        <h4 class="text-shadow">Diorama</h4>
-                    </div></a></div>
+                        <img src="img/Diorama.gif" alt="attractions">
+                        <div class="layer">
+                            <h4 class="text-shadow">Diorama</h4>
+                        </div>
+                    </a></div>
 
 
                 <div><a href="attractions/Game.html" class="item moreExp showOrHide">
-                    <img src="img/GameGallery.gif" alt="attractions">
-                    <div class="layer">
-                        <h4 class="text-shadow">Game Gallery</h4>
-                    </div></a></div>
+                        <img src="img/GameGallery.gif" alt="attractions">
+                        <div class="layer">
+                            <h4 class="text-shadow">Game Gallery</h4>
+                        </div>
+                    </a></div>
 
 
                 <div><a href="attractions/Holle.html" class="item moreExp showOrHide">
-                    <img src="img/HolleBolleGijs.gif" alt="attractions">
-                    <div class="layer">
-                        <h4 class="text-shadow">Holle Bolle Gijs</h4>
-                    </div></a></div>
+                        <img src="img/HolleBolleGijs.gif" alt="attractions">
+                        <div class="layer">
+                            <h4 class="text-shadow">Holle Bolle Gijs</h4>
+                        </div>
+                    </a></div>
 
 
                 <div><a href="attractions/Stoomtrein.html" class="item moreExp showOrHide">
-                    <img src="img/Stoomtrein.gif" alt="attractions">
-                    <div class="layer">
-                        <h4 class="text-shadow">Stoomtrein</h4>
-                    </div></a></div>
+                        <img src="img/Stoomtrein.gif" alt="attractions">
+                        <div class="layer">
+                            <h4 class="text-shadow">Stoomtrein</h4>
+                        </div>
+                    </a></div>
             </div>
 
             <!-- end Ready for all attractions? -->
 
-            <button id="moreExp" class="btn more"
-             onclick="moreExp()">See More</button></section>
+            <button id="moreExp" class="btn more" onclick="moreExp()">See More</button>
+        </section>
 
         <!-- star Check out our restaurants -->
 
@@ -326,31 +359,34 @@
                     <h2>Leisure & Dinner</h2>
                     <p>I am a front-end web developer. I can provide clean code and pixel
                         design. A responsive design makes your website accessible to
-                        all users, regardless of their device.</p></div>
-                <img src="img/din.gif" alt="dinner"></div>
-                <!-- end menu Dinner -->
+                        all users, regardless of their device.</p>
+                </div>
+                <img src="img/din.gif" alt="dinner">
+            </div>
+            <!-- end menu Dinner -->
 
-        <!-- title and button search -->
+            <!-- title and button search -->
             <div class="ready">
                 <h3>Check out our restaurants</h3>
             </div>
             <!-- button search -->
             <div class="search" style="width : 100%">
-                <input type="text" id="myInput1" 
-                placeholder="Search..." class="myInput"></input>
+                <input type="text" id="myInput1" placeholder="Search..." class="myInput"></input>
             </div>
-        <!--end title and button search -->
+            <!--end title and button search -->
 
 
-        <!-- star list restaurants (16 restaurants)-->
+            <!-- star list restaurants (16 restaurants)-->
             <div class="list" id="restaurants">
 
-            <!-- restaurants 1 -->
+                <!-- restaurants 1 -->
                 <div class="item img">
-                        <img src="img/restaurant.gif"></div>
+                    <img src="img/restaurant.gif">
+                </div>
+                
                 <div class="item text">
                     <h4>Wapen Van Raveleijn</h4>
-                        <i class="icon fa-solid fa-map-location-dot"></i>
+                    <i class="icon fa-solid fa-map-location-dot"></i>
                     <div class="map-layer">
                         <img class="map-img" src="img/map.gif" alt="map">
                         <i class="icon closeMap fa-solid fa-circle-xmark"></i>
@@ -364,14 +400,23 @@
                             <td>Service:</td>
                             <td>Vegetarian</td>
                         </tr>
+                        <tr>
+                            <td>Price :</td>
+                            <td>$100</td>
+                        </tr>
                     </table>
-                    <div class="add-to-cart btn btn-primary addRes"
-                        >Add to cart</div>
+                    <div class="add-to-cart btn btn-primary disRes"
+                    onclick="disRes('Wapen Van Raveleijn',100)">
+                        Dis to card </div>
+                    <div class="add-to-cart btn btn-primary addRes" 
+                    onclick="test('Wapen Van Raveleijn',100)">Add to cart
+                    </div>
                 </div>
-            
-            <!-- restaurants 2 -->
+
+                <!-- restaurants 2 -->
                 <div class="item img">
-                    <img src="img/restaurant.gif"></div>
+                    <img src="img/restaurant.gif">
+                </div>
                 <div class="item text">
                     <h4> Backerei Krumel </h4>
                     <i class="icon fa-solid fa-map-location-dot"></i>
@@ -388,14 +433,21 @@
                             <td>Service:</td>
                             <td>Vegetarian</td>
                         </tr>
+                        <tr>
+                            <td>Price :</td>
+                            <td>$150</td>
+                        </tr>
                     </table>
-                    <div class="add-to-cart btn btn-primary addRes"
-                        >Add to cart</div>
-               </div>
-            
-            <!-- restaurants 3 -->
+                    <div class="add-to-cart btn btn-primary disRes">
+                        Dis to card </div>
+                    <div class="add-to-cart btn btn-primary addRes" 
+                    onclick="test('Backerei Krumel',150)">Add to cart</div>
+                </div>
+
+                <!-- restaurants 3 -->
                 <div class="item img">
-                    <img src="img/restaurant.gif"></div>
+                    <img src="img/restaurant.gif">
+                </div>
                 <div class="item text">
                     <h4>'tVerwende Nest</h4>
                     <i class="icon fa-solid fa-map-location-dot"></i>
@@ -413,14 +465,19 @@
                             <td>Service:</td>
                             <td>Vegetarian</td>
                         </tr>
+                        <tr>
+                            <td>Price :</td>
+                            <td>$199</td>
+                        </tr>
                     </table>
-                    <div class="add-to-cart btn btn-primary addRes"
-                       >Add to cart</div>
-                </div> 
-                
-            <!-- restaurants 4 -->
+                    <div class="add-to-cart btn btn-primary addRes" 
+                    onclick="test('tVerwende Nest',199)">Add to cart</div>
+                </div>
+
+                <!-- restaurants 4 -->
                 <div class="item img">
-                    <img src="img/restaurant.gif"></div>
+                    <img src="img/restaurant.gif">
+                </div>
                 <div class="item text">
                     <h4>Frau Boltes Kuche</h4>
                     <i class="icon fa-solid fa-map-location-dot"></i>
@@ -438,16 +495,21 @@
                             <td>Service:</td>
                             <td>Vegetarian</td>
                         </tr>
+                        <tr>
+                            <td>Price :</td>
+                            <td>$99</td>
+                        </tr>
                     </table>
-                    <div class="add-to-cart btn btn-primary addRes"
-                       >Add to cart</div>
-                </div> 
+                    <div class="add-to-cart btn btn-primary addRes" 
+                    onclick="test('Frau Boltes Kuche',99)">Add to cart</div>
+                </div>
 
                 <!-- See more or less start from here -->
                 <!-- restaurants 5 -->
 
                 <div class="item moreDin showOrHide img">
-                    <img src="img/restaurant.gif"></div>
+                    <img src="img/restaurant.gif">
+                </div>
                 <div class="item moreDin showOrHide text">
                     <h4>Fabula Restaurant</h4>
                     <i class="icon fa-solid fa-map-location-dot"></i>
@@ -465,14 +527,19 @@
                             <td>Service:</td>
                             <td>Vegetarian</td>
                         </tr>
+                        <tr>
+                            <td>Price :</td>
+                            <td>$50</td>
+                        </tr>
                     </table>
-                    <div class="add-to-cart btn btn-primary addRes"
-                        >Add to cart</div>
+                    <div class="add-to-cart btn btn-primary addRes" 
+                    onclick="test('Fabula Restaurant',50)">Add to cart</div>
                 </div>
 
-            <!-- restaurants 6 -->
+                <!-- restaurants 6 -->
                 <div class="item moreDin showOrHide img">
-                    <img src="img/restaurant.gif"></div>
+                    <img src="img/restaurant.gif">
+                </div>
                 <div class="item moreDin showOrHide text">
                     <h4>Polles Keuken</h4>
                     <i class="icon fa-solid fa-map-location-dot"></i>
@@ -490,14 +557,19 @@
                             <td>Service:</td>
                             <td>Vegetarian</td>
                         </tr>
+                        <tr>
+                            <td>Price :</td>
+                            <td>$0</td>
+                        </tr>
                     </table>
-                    <div class="add-to-cart btn btn-primary addRes"
-                        >Add to cart</div>
+                    <div class="add-to-cart btn btn-primary addRes" 
+                    onclick="test('Polles Keuken',0)">Add to cart</div>
                 </div>
-            
-            <!-- restaurants 7 -->
+
+                <!-- restaurants 7 -->
                 <div class="item moreDin showOrHide img">
-                    <img src="img/restaurant.gif"></div>
+                    <img src="img/restaurant.gif">
+                </div>
                 <div class="item moreDin showOrHide text">
                     <h4>Panorama à la carte</h4>
                     <i class="icon fa-solid fa-map-location-dot"></i>
@@ -515,14 +587,20 @@
                             <td>Service:</td>
                             <td>Vegetarian</td>
                         </tr>
+                        <tr>
+                            <td>Price :</td>
+                            <td>$70</td>
+                        </tr>
                     </table>
-                    <div class="add-to-cart btn btn-primary addRes"
-                        >Add to cart</div>
+                    <div class="add-to-cart btn btn-primary addRes" 
+                    onclick="test('Panorama à la carte',70)"
+                    >Add to cart</div>
                 </div>
-            
-            <!-- restaurants 8 -->
+
+                <!-- restaurants 8 -->
                 <div class="item moreDin showOrHide img">
-                    <img src="img/restaurant.gif"></div>
+                    <img src="img/restaurant.gif">
+                </div>
                 <div class="item moreDin showOrHide text">
                     <h4>Pinokkio's pizza & pasta</h4>
                     <i class="icon fa-solid fa-map-location-dot"></i>
@@ -540,14 +618,20 @@
                             <td>Service:</td>
                             <td>Vegetarian</td>
                         </tr>
+                        <tr>
+                            <td>Price :</td>
+                            <td>$177</td>
+                        </tr>
                     </table>
-                    <div class="add-to-cart btn btn-primary addRes"
-                        >Add to cart</div>
+                    <div class="add-to-cart btn btn-primary addRes" 
+                    onclick="test('Pinokkios pizza & pasta',177)"
+                    >Add to cart</div>
                 </div>
-            
-            <!-- restaurants 9 -->
+
+                <!-- restaurants 9 -->
                 <div class="item moreDin showOrHide img">
-                    <img src="img/restaurant.gif"></div>
+                    <img src="img/restaurant.gif">
+                </div>
                 <div class="item moreDin showOrHide text">
                     <h4>In de Gelaarsde Kat</h4>
                     <i class="icon fa-solid fa-map-location-dot"></i>
@@ -565,14 +649,19 @@
                             <td>Service:</td>
                             <td>Vegetarian</td>
                         </tr>
+                        <tr>
+                            <td>Price :</td>
+                            <td>$99</td>
+                        </tr>
                     </table>
-                    <div class="add-to-cart btn btn-primary addRes"
-                        >Add to cart</div>
+                    <div class="add-to-cart btn btn-primary addRes" 
+                    onclick="test('In de Gelaarsde Kat',99)">Add to cart</div>
                 </div>
 
-            <!-- restaurants 10 -->
+                <!-- restaurants 10 -->
                 <div class="item moreDin showOrHide img">
-                    <img src="img/restaurant.gif"></div>
+                    <img src="img/restaurant.gif">
+                </div>
                 <div class="item moreDin showOrHide text">
                     <h4>De Vrolijke Noot</h4>
                     <i class="icon fa-solid fa-map-location-dot"></i>
@@ -590,14 +679,19 @@
                             <td>Service:</td>
                             <td>Vegetarian</td>
                         </tr>
+                        <tr>
+                            <td>Price :</td>
+                            <td>$110</td>
+                        </tr>
                     </table>
-                    <div class="add-to-cart btn btn-primary addRes"
-                        >Add to cart</div>
+                    <div class="add-to-cart btn btn-primary addRes" 
+                    onclick="test('De Vrolijke Noot',110)">Add to cart</div>
                 </div>
 
-            <!-- restaurants 11 -->
-               <div class="item moreDin showOrHide img">
-                    <img src="img/restaurant.gif"></div>
+                <!-- restaurants 11 -->
+                <div class="item moreDin showOrHide img">
+                    <img src="img/restaurant.gif">
+                </div>
                 <div class="item moreDin showOrHide text">
                     <h4>Het Witte Paard</h4>
                     <i class="icon fa-solid fa-map-location-dot"></i>
@@ -615,14 +709,19 @@
                             <td>Service:</td>
                             <td>Vegetarian</td>
                         </tr>
+                        <tr>
+                            <td>Price :</td>
+                            <td>$239</td>
+                        </tr>
                     </table>
-                    <div class="add-to-cart btn btn-primary addRes"
-                        >Add to cart</div>
+                    <div class="add-to-cart btn btn-primary addRes" 
+                    onclick="test('Het Witte Paard',239)">Add to cart</div>
                 </div>
 
-            <!-- restaurants 12 -->
+                <!-- restaurants 12 -->
                 <div class="item moreDin showOrHide img">
-                    <img src="img/restaurant.gif"></div>
+                    <img src="img/restaurant.gif">
+                </div>
                 <div class="item moreDin showOrHide text">
                     <h4>Kleyne Klaroen</h4>
                     <i class="icon fa-solid fa-map-location-dot"></i>
@@ -640,14 +739,19 @@
                             <td>Service:</td>
                             <td>Vegetarian</td>
                         </tr>
+                        <tr>
+                            <td>Price :</td>
+                            <td>$122</td>
+                        </tr>
                     </table>
                     <div class="add-to-cart btn btn-primary addRes"
-                        >Add to cart</div>
+                     onclick="test('Kleyne Klaroen',122)">Add to cart</div>
                 </div>
 
-            <!-- restaurants 13 -->
+                <!-- restaurants 13 -->
                 <div class="item moreDin showOrHide img">
-                    <img src="img/restaurant.gif"></div>
+                    <img src="img/restaurant.gif">
+                </div>
                 <div class="item moreDin showOrHide text">
                     <h4>'t Melkhuysje</h4>
                     <i class="icon fa-solid fa-map-location-dot"></i>
@@ -665,14 +769,19 @@
                             <td>Service:</td>
                             <td>Vegetarian</td>
                         </tr>
+                        <tr>
+                            <td>Price :</td>
+                            <td>$113</td>
+                        </tr>
                     </table>
-                    <div class="add-to-cart btn btn-primary addRes"
-                        >Add to cart</div>
+                    <div class="add-to-cart btn btn-primary addRes" 
+                    onclick="test('t Melkhuysje',113)">Add to cart</div>
                 </div>
 
-            <!-- restaurants 14 -->
+                <!-- restaurants 14 -->
                 <div class="item moreDin showOrHide img">
-                    <img src="img/restaurant.gif"></div>
+                    <img src="img/restaurant.gif">
+                </div>
                 <div class="item moreDin showOrHide text">
                     <h4>Panorama self service</h4>
                     <i class="icon fa-solid fa-map-location-dot"></i>
@@ -690,14 +799,19 @@
                             <td>Service:</td>
                             <td>Vegetarian</td>
                         </tr>
+                        <tr>
+                            <td>Price :</td>
+                            <td>$149</td>
+                        </tr>
                     </table>
-                    <div class="add-to-cart btn btn-primary addRes"
-                        >Add to cart</div>
+                    <div class="add-to-cart btn btn-primary addRes" 
+                    onclick="test('Panorama self service',149)">Add to cart</div>
                 </div>
 
-            <!-- restaurants 15 -->
+                <!-- restaurants 15 -->
                 <div class="item moreDin showOrHide img">
-                    <img src="img/restaurant.gif"></div>
+                    <img src="img/restaurant.gif">
+                </div>
                 <div class="item moreDin showOrHide text">
                     <h4>'t Poffertje</h4>
                     <i class="icon fa-solid fa-map-location-dot"></i>
@@ -715,14 +829,19 @@
                             <td>Service:</td>
                             <td>Vegetarian</td>
                         </tr>
+                        <tr>
+                            <td>Price :</td>
+                            <td>$159</td>
+                        </tr>
                     </table>
                     <div class="add-to-cart btn btn-primary addRes"
-                     >Add to cart</div>
+                     onclick="test('t Poffertje',159)">Add to cart</div>
                 </div>
 
-            <!-- restaurants 16 -->
+                <!-- restaurants 16 -->
                 <div class="item moreDin showOrHide img">
-                    <img src="img/restaurant.gif"></div>
+                    <img src="img/restaurant.gif">
+                </div>
                 <div class="item moreDin showOrHide text">
                     <h4>Station de Oost</h4>
                     <i class="icon fa-solid fa-map-location-dot"></i>
@@ -740,14 +859,19 @@
                             <td>Service:</td>
                             <td>Vegetarian</td>
                         </tr>
+                        <tr>
+                            <td>Price :</td>
+                            <td>$266</td>
+                        </tr>
                     </table>
                     <div class="add-to-cart btn btn-primary addRes"
-                        >Add to cart</div>
-               </div>
+                     onclick="test('Station de Oost',266)">Add to cart</div>
+                </div>
 
-            <!-- restaurants 17 -->
+                <!-- restaurants 17 -->
                 <div class="item moreDin showOrHide img">
-                    <img src="img/restaurant.gif"></div>
+                    <img src="img/restaurant.gif">
+                </div>
                 <div class="item moreDin showOrHide text">
                     <h4>Toko Pagode</h4>
                     <i class="icon fa-solid fa-map-location-dot"></i>
@@ -765,8 +889,13 @@
                             <td>Service:</td>
                             <td>Vegetarian</td>
                         </tr>
+                        <tr>
+                            <td>Price :</td>
+                            <td>$999</td>
+                        </tr>
                     </table>
-                    <div class="add-to-cart btn btn-primary addRes">
+                    <div class="add-to-cart btn btn-primary addRes" 
+                    onclick="test('Toko Pagode',999)">
                         Add to cart</div>
                 </div>
             </div>
@@ -796,8 +925,7 @@
             </div>
 
             <div class="search" style="width : 100%">
-                <input type="text" id="myInput2" 
-                placeholder="Search..." class="myInput"></input>
+                <input type="text" id="myInput2" placeholder="Search..." class="myInput"></input>
             </div>
 
             <div class="list" id="Characters">
@@ -1108,8 +1236,8 @@
             </div>
         </section>
 
-<!-- /*  ký vé */ -->
-        <div class="product" id="menuSelect">
+        <!-- /*  ký vé */ -->
+        <div class="menuSelect" id="menuSelect">
             <div class="goldpass-tile">
                 <img src="./img/whatsup.gif" alt="goldpass" width="100%">
                 <div class="price">Ticket</div>
@@ -1119,8 +1247,8 @@
                 <div class="pass">
                     <table class="features">
                         <tr>
-                            <td class="feature">Who : </td>
-                            <td><select id="human" onchange="changeSl()">
+                            <td class="feature" >Who : </td>
+                            <td><select id="human" onchange="changeSl()" >
                                     <option value="Child" id="Child">Child</option>
                                     <option value="Young" id="young">Young</option>
                                     <option value="Both" id="both">Both</option>
@@ -1133,37 +1261,51 @@
                         <tr>
                             <td class="feature">Amount :</td>
                             <td class="feature"><input type="number" style="text-align:center" id="amount"
-                                onchange="nbTicket()" checked min="0"></td>
+                                onfocus="focusFunction()" onblur="blurFunction()" onchange="nbTicket()" checked min="0"></td>
                         </tr>
                         <tr>
                             <td class="feature">Number of days :</td>
                             <td class="feature"><input type="number" style="text-align:center" id="day"
-                                    onchange="nbTicket()" checked min="0"></td>
+                                onfocus="focusFunction1()" onblur="blurFunction1()" onchange="nbTicket()" checked min="0"></td>
                         </tr>
-                        <tr>
+                        <!-- <tr>
                             <td class="feature" id="intro"></td>
-                            <td class="feature" id="all"></td>
+                            <td class="feature" id="all" style="text-align: right ;"></td>
+                        </tr> -->
+                        <tr>
+                           <td id="listRes">---------</td>
                         </tr>
                         <tr>
-                            <td style="text-align:left"><button id="buyNow" class="buy-pass" 
-                                >Buy now</button>
+                            <td id="idResShow"></td>
+                            <td id="priceResShow" style="text-align: center ;" ></td>
+                        </tr>
+                        <!-- <tr>
+                            <td>Total money</td>
+                            <td id="end" style="text-align: right ;" ></td>
+                        </tr> -->
+                        <tr>
+                            <td>Total All</td>
+                            <td id="total" style="text-align:right ;">$</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align:left"><button id="buyNow" class="buy-pass">Buy now</button>
                             </td>
-                            <td style="text-align:right"><button id="buyNow1" class="buy-pass" 
-                            onclick="buyNow1()">x</td>
+                            <td style="text-align:right"><button id="buyNow1" class="buy-pass" onclick="buyNow1()">x
+                            </td>
                         </tr>
                     </table>
                 </div>
             </div>
         </div>
     </div>
-    
-    <div id="showSure" class="tb2" >
+
+    <div id="showSure" class="tb2">
         <div id="showSure1"></div>
-        <div><button class="done"  id="hideSure">Done</button></div>
+        <div><button class="done" id="hideSure">Done</button></div>
     </div>
-    <div id="addRes1" class="tb2" >
+    <div id="addRes1" class="tb2">
         <div id="addRes2"></div>
-        <div><button class="done"id="hideaddRes">Done</button></div>
+        <div><button class="done" id="hideaddRes">Done</button></div>
         <div><button class="done" id="myBk">Go Booking !</button></div>
     </div>
     <!--Footer Section-->
