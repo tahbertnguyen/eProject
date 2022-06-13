@@ -124,15 +124,6 @@ else{
   document.getElementById("total").innerText = "Please enter amount and number of days !!";
 }
 }
-function disRes(){
-  for(x in cart){
-    if(id == cart[x].id){
-      cart.splice(x,1)
-      end -= money;
-      count -=1;
-      document.getElementById("total").innerText = parseInt(end) + parseInt(all);
-    }
-}}
 function showCart(cart){
   $('#idResShow').html(null);
   $('#priceResShow').html(null);
@@ -156,7 +147,17 @@ function blurFunction1() {
 // function myReload(){
 //   return "Do you like me ";
 // }
-
+function disRes(id,money){
+  for(x in cart){
+    if(id == cart[x].id){
+      cart.splice(x,1)
+      end -= money;
+      count -=1;
+      document.getElementById("total").innerText = parseInt(end) + parseInt(all);
+        $('#idResShow').append(`${cart[i].id} <br> `);
+        $('#priceResShow').append(` ${cart[i].money} $ <br> `);
+      }}
+    }
 
 
 
