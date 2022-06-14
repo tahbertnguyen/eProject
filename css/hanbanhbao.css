@@ -16,11 +16,10 @@
   height: auto;
   width: 30%;
   position: fixed;
-  top: 2%;
+  top: 20%;
   left: 37%;
   z-index: 1000;
   box-shadow: 2px 14px 20px rgb(0 0 0 / 15%);
-  padding: 25px 20px;
   border-radius: 20px;
   display: none;
 }
@@ -81,66 +80,128 @@
 }
 @media (max-width: 1380px) {
   .menuSelect {
-    width: 35%;
-    top: 10%;
-    left: 33%;
-    padding: 25px 20px;
+    width: 25%;
+    top: 11%;
+    left: 39%;
     border-radius: 20px;
 }
 .tb2{
   height: auto;
   width: 20%;
-  right: 39%;
-  top: 40%; 
+  right: 38%;
+  top: 15%; 
   border: solid 2px;
   border-radius: 10px;
 }
 }
+
+
 @media (max-width: 1170px) {
   .menuSelect {
-    width: 50%;
+    width: 30%;
     top: 10%;
-    left: 28%;
-    padding: 25px 20px;
+    left: 36%;
     border-radius: 20px;
 }
 .tb2{
   font-size: 14px;
   height: auto;
   width: 25%;
-  right: 35%;
-  top: 40%; 
+  right: 36%;
+  top: 15%; 
   border: solid 2px;
   border-radius: 10px;
 }
 }
+
+
 @media (max-width: 1120px) {
   .menuSelect {
-    width: 40%;
-    top: 7%;
-    left: 30%;
-    padding: 10px 10px;
+    width: 30%;
+    top: 10%;
+    left: 36%;
     border-radius: 20px;
 }
 .tb2{
   font-size: 14px;
   height: auto;
   width: 25%;
-  right: 37%;
-  top: 40%; 
+  right: 36%;
+  top: 15%; 
   border: solid 2px;
   border-radius: 10px;
 }
 }
+
 @media (max-width: 920px) {
+  .menuSelect {
+    width: 40%;
+    top: 17%;
+    left: 34%;
+    border-radius: 20px;
 }
+.tb2{
+  font-size: 14px;
+  height: auto;
+  width: 25%;
+  right: 34%;
+  top: 20%; 
+  border: solid 2px;
+  border-radius: 10px;
+}
+}
+
 @media (max-width: 770px) {
+  .menuSelect {
+    width: 45%;
+    top: 17%;
+    left: 30%;
+    border-radius: 20px;
 }
-@media (max-width: 750px) {
+.tb2{
+  font-size: 14px;
+  height: auto;
+  width: 40%;
+  right: 27%;
+  top: 25%; 
+  border: solid 2px;
+  border-radius: 10px;
 }
+}
+
 @media (max-width: 630px) {
+  .menuSelect {
+    width: 52%;
+    top: 17%;
+    left: 27%;
+    border-radius: 20px;
+}
+.tb2{
+  font-size: 14px;
+  height: auto;
+  width: 40%;
+  right: 27%;
+  top: 25%; 
+  border: solid 2px;
+  border-radius: 10px;
+}
 }
 @media (max-width: 390px) {
+  .menuSelect {
+    width: 85%;
+    top: 17%;
+    left: 8%;
+    border-radius: 20px;
+}
+.tb2{
+  font-size: 14px;
+  height: auto;
+  width: 80%;
+  right: 8%;
+  top: 25%; 
+  border: solid 2px;
+  border-radius: 10px;
+}
 }
 
 

@@ -98,8 +98,9 @@ h3{
     padding: 0;}
 
 .map-char img{
-    width: 100%;
-    height: auto;}
+    width: 50%;
+    margin-left: 27%;
+    height: 100%;}
 .ct{
         font-size: 21px;
         text-align: center;
